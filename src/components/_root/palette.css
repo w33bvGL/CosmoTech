@@ -1,0 +1,51 @@
+:root {
+  /* palette */
+  --color-white: white;
+  --color-e5e5e5: #e5e5e5;
+  --color-0063d1: #0063d1;
+  --color-222222: #222222;
+  --color-EBEBEB: #ebebeb;
+  --color-0059bc: #0059bc;
+  --color-999999: #999999;
+  --color-1C274C: #1c274c;
+  --color-f3f5f6: #f3f5f6;
+  --color-0077ff21: #0077ff21;
+  --color-e9e9e9: #e9e9e981;
+
+  /* root */
+  --body-font-color: var(--color-222222);
+  --a-color: var(--color-222222);
+
+  /* header */
+  --header-background-color: var(--color-white);
+  --header-child-border-color: var(--color-e5e5e5);
+  --header-child-ul-li-border-color: var(--color-e5e5e5);
+  --header-child-ul-li-hover-color: var(--color-0063d1);
+  --header-child-top-a-color: var(--color-222222);
+  --header-child-middle-search-bar-border-color: var(--color-EBEBEB);
+  --header-child-middle-search-input-color: var(--color-222222);
+  --header-child-middle-search-select-color: var(--color-222222);
+  --header-child-middle-search-select-border: var(--color-EBEBEB);
+  --header-child-middle-search-button: var(--color-0063d1);
+  --header-child-middle-button-hov: var(--color-0059bc);
+  --header-child-middle-burger-hov: var(--color-0059bc);
+  --header-child-middle-content-box-hov: var(--color-0063d1);
+  --header-child-middle-title-font-color: var(--color-222222);
+  --header-language-currency-menu: var(--color-white);
+  --header-language-currency-border-color: var(--color-e5e5e5);
+  --header-language-currency-a-hov: var(--color-0063d1);
+  --header-background-color-mobile: var(--color-0063d1);
+  --header-button-search-stroke-color: var(--color-1C274C);
+
+  /* bottom Navigation */
+  --mobile-nav-background-color: var(--color-white);
+  --mobile-nav-buttons-hov: var(--color-0077ff21);
+  --mobile-nav-buttons-active: var(--color-0063d1);
+
+  /* title */
+  --elementor-background-color: var(--color-f3f5f6);
+  --swiper-navigation-size: 30px !important;
+  --swiper-theme-color: var(--color-0063d1);
+  --sw-model-button-background-color: var(--color-0063d1);
+  --sw-model-button-hov: var(--color-0059bc); 
+}
