@@ -9,7 +9,6 @@
   <appTitle></appTitle>
   <!-- title End -->
 </template>
-
 <script>
 import appHeader from "./components/header/appHeader.vue";
 import bottomNavbar from "./components/bottomNavigation/appBottomNavigation.vue";

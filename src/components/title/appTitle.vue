@@ -57,7 +57,7 @@
             <div class="background-el"></div>
             <div class="el-banner-cont">
               <h2 class="el-banner-name">
-                Limited <br />
+                Limited <br />www
                 Top Camera
               </h2>
               <p class="el-banner-description">Top Quality Products</p>
