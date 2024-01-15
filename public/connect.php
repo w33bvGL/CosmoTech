@@ -1,14 +1,13 @@
 <?php 
-
-$serv_name = ""; 
-$serv_username = ""; 
+$serv_name = "localhost"; 
+$serv_username = "root"; 
 $serv_pass = "";
-$db_name = ""; 
+$db_name = "onlineshop"; 
 
-// connect
-$connect = new mysqli ($serv_name, $serv_username, $serv_pass, $db_name);
+// connect to database
+$connect = mysqli_connect($serv_name, $serv_username, $serv_pass, $db_name);
 
-if ($connect->connect_error) {
+if (!$connect) {
   echo "connect Failed"; 
 } else {
   echo "connected!";

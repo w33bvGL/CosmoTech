@@ -80,8 +80,28 @@
 </template>
 
 <script>
-/* eslint-disable */
+import axios from "axios";
+
 export default {
+  data() {
+    return {
+      data: [],
+    };
+  },
+  methods: {
+    fetchData() {
+      axios
+        .get("@/components/")
+        .then((response) => {
+          this.data = response.data;
+        })
+        .catch((error) => {
+          console.error("Ошибка при загрузке данных", error);
+          console.log(error.response); // Логирование ответа с сервера
+        });
+    },
+  },
+  /* eslint-disable */
   mounted() {
     const swiper = new Swiper(".swiper-container", {
       navigation: {
