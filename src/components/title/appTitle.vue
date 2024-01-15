@@ -96,8 +96,8 @@ export default {
           this.data = response.data;
         })
         .catch((error) => {
-          console.error("Ошибка при загрузке данных", error);
-          console.log(error.response); // Логирование ответа с сервера
+          console.error("error", error);
+          console.log(error.response);
         });
     },
   },
