@@ -150,16 +150,18 @@ export default {
     };
     /* eslint-disable */
     const swiper = new Swiper(".swiper-container", {
+      /* eslint-enable */
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-        /* eslint-enable */
       },
       autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
+        delay: 1000,
+        disableOnInteraction: true,
       },
-
+      loop: true,
+      effect: "slide",
+      speed: 1000,
       on: {
         slideChangeTransitionStart: function () {
           const activeSlide = document.querySelector(".swiper-slide-active");
