@@ -1,4 +1,4 @@
-# cosmo
+# cosmoTech - Օնլայն Խանութ
 
 ## Project setup
 ```

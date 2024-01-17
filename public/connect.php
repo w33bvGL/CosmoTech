@@ -1,5 +1,5 @@
 <?php 
-$serv_name = "localhost"; 
+$serv_name = "192.168.1.7"; 
 $serv_username = "root"; 
 $serv_pass = "";
 $db_name = "onlineshop"; 
@@ -8,7 +8,5 @@ $db_name = "onlineshop";
 $connect = mysqli_connect($serv_name, $serv_username, $serv_pass, $db_name);
 
 if (!$connect) {
-  echo "connect Failed"; 
-} else {
-  echo "connected!";
+  die("Connection failed"); // connection error
 }

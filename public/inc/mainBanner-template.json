@@ -1,0 +1,29 @@
+[
+  {
+    "id": "7",
+    "name": "Նոր macbook Pro",
+    "description": "Գերհզոր M3 չիպով Արդեն վաճառքում",
+    "image": "../../assets/img/title/mainBanner-1.webp",
+    "visibility": "publish",
+    "category": "tablets",
+    "subcategory": "97"
+  },
+  {
+    "id": "8",
+    "name": "Ամանորյա Զեղչեր",
+    "description": "Խաղային նոր ակսեսուարների համար",
+    "image": "../../assets/img/title/mainBanner-2.webp",
+    "visibility": "publish",
+    "category": "accessories",
+    "subcategory": "97"
+  },
+  {
+    "id": "9",
+    "name": "HONOR 90 Pro lite",
+    "description": "կիսվիր հետաքրքիր պահերով",
+    "image": "../../assets/img/title/mainBanner-3.webp",
+    "visibility": "publish",
+    "category": "smartphone",
+    "subcategory": "97"
+  }
+]

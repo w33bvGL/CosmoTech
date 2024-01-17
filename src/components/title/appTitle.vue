@@ -6,34 +6,25 @@
           <!-- slider Start -->
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div
+                class="swiper-slide"
+                v-for="banner in mainBanner"
+                :key="banner.id"
+              >
+                <img
+                  :src="banner.image"
+                  alt="mainBanner"
+                  class="sw-model-back-image"
+                />
                 <div class="sw-cont">
-                  <h2 class="sw-model-name">GEAR 360</h2>
-                  <h2 class="sw-model-title">Wireless Earbuds</h2>
+                  <h2 class="sw-model-name">{{ banner.category }}</h2>
+                  <h2 class="sw-model-title">{{ banner.name }}</h2>
                   <p class="sw-model-description">
-                    Top quality earbuds & accessories
+                    {{ banner.description }}
                   </p>
-                  <button class="sw-model-button">discover Now</button>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="sw-cont">
-                  <h2 class="sw-model-name">GEAR 360</h2>
-                  <h2 class="sw-model-title">Wireless Earbuds</h2>
-                  <p class="sw-model-description">
-                    Top quality earbuds & accessories
-                  </p>
-                  <div class="sw-model-button">discover Now</div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="sw-cont">
-                  <h2 class="sw-model-name">GEAR 360</h2>
-                  <h2 class="sw-model-title">Wireless Earbuds</h2>
-                  <p class="sw-model-description">
-                    Top quality earbuds & accessories
-                  </p>
-                  <div class="sw-model-button">discover Now</div>
+                  <button class="sw-model-button" @click="mainBannerGotoShop()">
+                    Տեսնել ավելին
+                  </button>
                 </div>
               </div>
             </div>
@@ -43,35 +34,50 @@
           <!-- slider sliderEnd -->
         </div>
         <div class="el-title-2 elementor-el">
-          <div class="title-2-el-content">
-            <div class="background-el"></div>
+          <div class="title-2-el-content" v-if="banner338x240.length > 0">
+            <img
+              class="background-el"
+              :src="banner338x240[0].image"
+              alt="BannerImage"
+            />
             <div class="el-banner-cont">
-              <h2 class="el-banner-name">
-                New Style <br />
-                Bluetooh Speaker
-              </h2>
-              <p class="el-banner-description">Free Shipping 20km</p>
+              <h2 class="el-banner-name">{{ banner338x240[0].name }}</h2>
+              <p class="el-banner-description">
+                {{ banner338x240[0].description }}
+              </p>
             </div>
           </div>
-          <div class="title-2-el-content">
-            <div class="background-el"></div>
+
+          <div class="title-2-el-content" v-if="banner338x240.length > 1">
+            <img
+              class="background-el"
+              :src="banner338x240[1].image"
+              alt="BannerImage"
+            />
             <div class="el-banner-cont">
-              <h2 class="el-banner-name">
-                Limited <br />
-                Top Camera
-              </h2>
-              <p class="el-banner-description">Top Quality Products</p>
+              <h2 class="el-banner-name">{{ banner338x240[1].name }}</h2>
+              <p class="el-banner-description">
+                {{ banner338x240[1].description }}
+              </p>
             </div>
           </div>
         </div>
-        <div class="el-title-1 elementor-el">
-          <div class="background-el"></div>
+        <div class="el-title-1 elementor-el" v-if="banner338x500.length > 0">
+          <img
+            class="background-el"
+            :src="banner338x500[0].image"
+            alt="BannerImage"
+          />
           <div class="el-banner-cont">
             <div class="names">
-              <h3 class="el-banner-name">Xbox Wireless</h3>
-              <h2 class="el-banner-title">Sale Up To 50% Off</h2>
+              <h3 class="el-banner-name">{{ banner338x500[0].name }}</h3>
+              <h2 class="el-banner-title">
+                {{ banner338x500[0].description }}
+              </h2>
             </div>
-            <button class="el-banner-button">Shop now</button>
+            <button class="el-banner-button" @click="bannerGotoShop()">
+              Պատվիրել հիմա
+            </button>
           </div>
         </div>
       </div>
@@ -85,15 +91,45 @@ import axios from "axios";
 export default {
   data() {
     return {
-      data: [],
+      banner338x240: [],
+      banner338x500: [],
+      mainBanner: [],
     };
   },
   methods: {
-    fetchData() {
+    bannerGotoShop() {
+      window.location.href = "shop.php?" + this.banner338x500[0].name;
+    },
+    mainBannerGotoShop() {
+      window.location.href = "shop.php?" + this.banner338x500[0].name;
+    },
+    getMainBanner() {
       axios
-        .get("@/components/")
+        .get("/inc/mainBanner-template.json")
         .then((response) => {
-          this.data = response.data;
+          this.mainBanner = response.data;
+        })
+        .catch((error) => {
+          console.error("error", error);
+          console.log(error.responce);
+        });
+    },
+    getBanner338x240() {
+      axios
+        .get("/inc/getBanner-338x240-template.json")
+        .then((response) => {
+          this.banner338x240 = response.data;
+        })
+        .catch((error) => {
+          console.error("error", error);
+          console.log(error.response);
+        });
+    },
+    getBanner338x500() {
+      axios
+        .get("/inc/getBanner-338x500-template.json")
+        .then((response) => {
+          this.banner338x500 = response.data;
         })
         .catch((error) => {
           console.error("error", error);
@@ -103,10 +139,23 @@ export default {
   },
   /* eslint-disable */
   mounted() {
+    this.getBanner338x240();
+    this.getBanner338x500();
+    this.getMainBanner();
     const swiper = new Swiper(".swiper-container", {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      on: {
+        slideChangeTransitionStart: function () {
+          const activeSlide = document.querySelector(".swiper-slide-active");
+          activeSlide.querySelector(".sw-cont").classList.add("animate");
+        },
       },
     });
   },
@@ -123,8 +172,13 @@ export default {
   .swiper-slide {
     width: 100%;
     height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
+
+    .sw-model-back-image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
 
     .sw-cont {
       width: 100%;
@@ -134,6 +188,14 @@ export default {
       flex-direction: column;
       gap: 20px;
       justify-content: center;
+      position: absolute;
+      z-index: 2;
+      opacity: 1;
+      transition: 0.5s;
+
+      .animate {
+        opacity: 1 !important;
+      }
 
       .sw-model-name {
         text-transform: uppercase;
@@ -152,12 +214,10 @@ export default {
         font-size: 50px;
         color: #ffffff;
         font-weight: 400;
-        font-family: "roboto" !important;
       }
       .sw-model-description {
         font-size: 18px;
         font-weight: 500;
-        font-family: "roboto" !important;
       }
 
       .sw-model-button {
@@ -182,15 +242,6 @@ export default {
         }
       }
     }
-  }
-  .swiper-slide:nth-child(1) {
-    background-image: url("../../../public/assets/img/title/slide3.webp");
-  }
-  .swiper-slide:nth-child(2) {
-    background-image: url("../../../public/assets/img/title/slide2.webp");
-  }
-  .swiper-slide:nth-child(3) {
-    background-image: url("../../../public/assets/img/title/slide1.webp");
   }
 }
 
@@ -262,6 +313,7 @@ export default {
           .el-banner-title {
             font-size: 25px;
             font-weight: 300;
+            text-align: center;
           }
         }
 
@@ -293,7 +345,7 @@ export default {
       background-position: right;
       background-repeat: no-repeat;
       background-size: cover;
-      transition: 0.3s;
+      transition: var(--sw-banner-hover-transition);
     }
 
     .el-title-2 {
@@ -336,18 +388,6 @@ export default {
       }
     }
   }
-}
-
-.title-2-el-content:nth-child(1) .background-el {
-  background-image: url("../../../public/assets/img/title/banner2.avif");
-}
-
-.title-2-el-content:nth-child(2) .background-el {
-  background-image: url("../../../public/assets/img/title/banner1.avif");
-}
-
-.el-title-1 .background-el {
-  background-image: url("../../../public/assets/img/title/banner3.webp");
 }
 
 // media
