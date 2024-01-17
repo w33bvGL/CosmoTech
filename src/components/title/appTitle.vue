@@ -136,31 +136,46 @@ export default {
           console.log(error.response);
         });
     },
+    getMainActiveBanner() {
+      const acs = document.querySelector(".swiper-slide");
+      acs.querySelector(".sw-cont").classList.add("animate");
+    },
   },
-  /* eslint-disable */
   mounted() {
     this.getBanner338x240();
     this.getBanner338x500();
     this.getMainBanner();
+    window.onload = () => {
+      this.getMainActiveBanner();
+    };
+    /* eslint-disable */
     const swiper = new Swiper(".swiper-container", {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+        /* eslint-enable */
       },
       autoplay: {
         delay: 5000,
         disableOnInteraction: false,
       },
+
       on: {
         slideChangeTransitionStart: function () {
           const activeSlide = document.querySelector(".swiper-slide-active");
           activeSlide.querySelector(".sw-cont").classList.add("animate");
         },
+        slideChangeTransitionEnd() {
+          document.querySelectorAll(".swiper-slide").forEach((slide) => {
+            if (!slide.classList.contains("swiper-slide-active")) {
+              slide.querySelector(".sw-cont").classList.remove("animate");
+            }
+          });
+        },
       },
     });
   },
 };
-/* eslint-enable */
 </script>
 
 <style scoped lang="scss">
@@ -179,6 +194,10 @@ export default {
       width: 100%;
       height: 100%;
     }
+    .animate {
+      opacity: 1 !important;
+      transform: translateY(0px) !important;
+    }
 
     .sw-cont {
       width: 100%;
@@ -190,12 +209,9 @@ export default {
       justify-content: center;
       position: absolute;
       z-index: 2;
-      opacity: 1;
-      transition: 0.5s;
-
-      .animate {
-        opacity: 1 !important;
-      }
+      opacity: 0;
+      transform: translateY(100px);
+      transition: 1.2s ease all;
 
       .sw-model-name {
         text-transform: uppercase;
