@@ -290,7 +290,7 @@ export default {
     max-width: 1800px;
     margin: 0 auto;
     width: 100%;
-    height: 500px;
+    height: 100%;
     display: flex;
     gap: 20px;
 
@@ -444,5 +444,67 @@ export default {
   .el-title-big {
     width: 100% !important;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-slide {
+    .sw-cont {
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      text-align: center;
+      padding: 0 !important;
+
+      .sw-model-name {
+        font-size: 20px !important;
+      }
+
+      .sw-model-title {
+        font-size: 25px !important;
+      }
+
+      .sw-model-description {
+        font-size: 15px !important;
+      }
+    }
+  }
+
+  .elementor-el {
+    height: 300px !important;
+  }
+
+  .slider-button {
+    display: none;
+  }
+
+  .elementor {
+    background-color: var(--elementor-background-color-mobile);
+    padding: 20px 0;
+
+    .el-title-big {
+      border-radius: 20px;
+    }
+  }
+}
+
+//  only for header
+@media screen and (max-width: 615px) {
+  .elementor-el {
+    height: 200px !important;
+  }
+
+  .sw-model-button {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .sw-model-name {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  //
 }
 </style>

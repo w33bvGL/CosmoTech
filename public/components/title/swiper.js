@@ -7394,4 +7394,4 @@ var Swiper = (function () {
   ];
   return ee.use(ue), ee;
 })();
-//# sourceMappingURL=swiper-bundle.min.js.map
+//SWIPER BY VAHEEEE

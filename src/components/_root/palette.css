@@ -49,4 +49,5 @@
   --sw-model-button-background-color: var(--color-0063d1);
   --sw-model-button-hov: var(--color-0059bc);
   --sw-banner-hover-transition: 0.5s;
+  --elementor-background-color-mobile: var(--color-white);
 }
