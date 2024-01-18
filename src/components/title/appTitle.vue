@@ -140,42 +140,53 @@ export default {
       const acs = document.querySelector(".swiper-slide");
       acs.querySelector(".sw-cont").classList.add("animate");
     },
+    updateSwiper() {
+      if (this.swiper) {
+        this.swiper.update();
+      }
+    },
   },
   mounted() {
     this.getBanner338x240();
     this.getBanner338x500();
     this.getMainBanner();
     window.onload = () => {
+      setTimeout(() => {
+        this.getMainActiveBanner();
+        this.updateSwiper(); // sw-update
+      }, 50);
+    };
+    window.onload = () => {
+      /* eslint-disable */
+      const swiper = new Swiper(".swiper-container", {
+        /* eslint-enable */
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 8000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        effect: "slide",
+        speed: 400,
+        on: {
+          slideChangeTransitionStart: function () {
+            const activeSlide = document.querySelector(".swiper-slide-active");
+            activeSlide.querySelector(".sw-cont").classList.add("animate");
+          },
+          slideChangeTransitionEnd() {
+            document.querySelectorAll(".swiper-slide").forEach((slide) => {
+              if (!slide.classList.contains("swiper-slide-active")) {
+                slide.querySelector(".sw-cont").classList.remove("animate");
+              }
+            });
+          },
+        },
+      });
       this.getMainActiveBanner();
     };
-    /* eslint-disable */
-    const swiper = new Swiper(".swiper-container", {
-      /* eslint-enable */
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      autoplay: {
-        delay: 1000,
-        disableOnInteraction: true,
-      },
-      loop: true,
-      effect: "slide",
-      speed: 1000,
-      on: {
-        slideChangeTransitionStart: function () {
-          const activeSlide = document.querySelector(".swiper-slide-active");
-          activeSlide.querySelector(".sw-cont").classList.add("animate");
-        },
-        slideChangeTransitionEnd() {
-          document.querySelectorAll(".swiper-slide").forEach((slide) => {
-            if (!slide.classList.contains("swiper-slide-active")) {
-              slide.querySelector(".sw-cont").classList.remove("animate");
-            }
-          });
-        },
-      },
-    });
   },
 };
 </script>
@@ -196,6 +207,7 @@ export default {
       width: 100%;
       height: 100%;
     }
+
     .animate {
       opacity: 1 !important;
       transform: translateY(0px) !important;
@@ -233,6 +245,7 @@ export default {
         color: #ffffff;
         font-weight: 400;
       }
+
       .sw-model-description {
         font-size: 18px;
         font-weight: 500;
@@ -413,9 +426,11 @@ export default {
   .el-title-1 {
     display: none !important;
   }
+
   .el-title-2 {
     width: 30% !important;
   }
+
   .el-title-big {
     width: 70% !important;
   }
