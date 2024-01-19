@@ -508,8 +508,4 @@ export default {
     display: none !important;
   }
 }
-
-@media screen and (max-width: 375px) {
-  //
-}
 </style>

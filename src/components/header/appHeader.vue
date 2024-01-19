@@ -634,6 +634,10 @@ header {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: var(--header-background-color-mobile) !important;
+    position: sticky;
+    top: 0;
+    z-index: 900;
+    border: none !important;
   }
 
   .header-container-middle-profile-cart-wishlist {
