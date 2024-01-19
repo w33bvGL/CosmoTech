@@ -444,6 +444,14 @@ export default {
   .el-title-big {
     width: 100% !important;
   }
+  .elementor {
+    background-color: var(--elementor-background-color-mobile);
+    padding: 20px 0;
+  }
+
+  .elementor-el {
+    height: 400px !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -478,9 +486,6 @@ export default {
   }
 
   .elementor {
-    background-color: var(--elementor-background-color-mobile);
-    padding: 20px 0;
-
     .el-title-big {
       border-radius: 20px;
     }
