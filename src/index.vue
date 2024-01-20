@@ -8,11 +8,15 @@
   <!-- title Start -->
   <appTitle></appTitle>
   <!-- title End -->
+  <!-- advantages Start -->
+  <appAdvantages></appAdvantages>
+  <!-- advantages End -->
 </template>
 <script>
-import appHeader from "./components/header/appHeader.vue";
-import bottomNavbar from "./components/bottomNavigation/appBottomNavigation.vue";
-import appTitle from "./components/title/appTitle.vue";
+import appHeader from "./components/appHeader.vue";
+import bottomNavbar from "./components/appBottomNavigation.vue";
+import appTitle from "./components/appTitle.vue";
+import appAdvantages from "./components/appAdvantages.vue";
 import "@/components/_root/root.scss";
 import "@/components/_root/palette.css";
 
@@ -22,6 +26,7 @@ export default {
     appHeader,
     bottomNavbar,
     appTitle,
+    appAdvantages,
   },
 };
 </script>
