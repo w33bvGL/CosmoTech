@@ -9,6 +9,7 @@
   --color-999999: #999999;
   --color-1C274C: #1c274c;
   --color-f3f5f6: #f3f5f6;
+  --color-666666: #666666;
   --color-0077ff21: #0077ff21;
   --color-e9e9e9: #e9e9e981;
 
@@ -50,4 +51,10 @@
   --sw-model-button-hov: var(--color-0059bc);
   --sw-banner-hover-transition: 0.5s;
   --elementor-background-color-mobile: var(--color-white);
+
+  /* advantages */
+  --advantages-background-color: var(--color-f3f5f6);
+  --adv-background-color: var(--color-white);
+  --adv-content-border-color: var(--color-e5e5e5);
+  --adv-title-p-color: var(--color-666666);
 }
