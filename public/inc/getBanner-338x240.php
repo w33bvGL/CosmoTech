@@ -1,4 +1,8 @@
+
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 require_once "../connect.php";
 
 try {
@@ -14,16 +18,31 @@ try {
   $data = array();
   while ($row = mysqli_fetch_assoc($result)) {
     $imagePath = $row['image'];
-    $imageSize = getimagesize($imagePath);
+    $imageWidth = 0;
+    $imageHeight = 0;
 
-    if ($imageSize && $imageSize[0] == 338 && $imageSize[1] == 240) {
+    $imageContent = file_get_contents($imagePath);
+    $image = imagecreatefromstring($imageContent);
+
+    if ($image !== false) {
+      $imageWidth = imagesx($image);
+      $imageHeight = imagesy($image);
+
+      imagedestroy($image);
+    }
+
+    if ($imageWidth == 338 && $imageHeight == 240) {
       $data[] = $row;
 
       if (count($data) >= $bannerLimit) {
         break;
       }
+    } else {
+      // Обработка ошибки
+      echo "Failed to get image size for: $imagePath\n";
     }
   }
+
 
   header('Content-Type: application/json');
   echo json_encode($data, JSON_UNESCAPED_UNICODE);

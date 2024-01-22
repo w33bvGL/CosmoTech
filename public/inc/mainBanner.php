@@ -14,7 +14,7 @@ try {
     $data[] = $row;
   }
 
-  header('Content-Type: application/json');  
+  header('Content-Type: application/json');
   echo json_encode($data, JSON_UNESCAPED_UNICODE);
 
   mysqli_free_result($result); // clear cache
@@ -22,4 +22,3 @@ try {
 } catch (Exception $error) {
   echo 'promise error: ' . $error->getMessage();
 }
-   
