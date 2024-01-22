@@ -30,7 +30,7 @@ try {
       imagedestroy($image);
     }
 
-    if ($imageWidth == 338 && $imageHeight == 240) {
+    if ($imageWidth == 338 && $imageHeight == 500) {
       $data[] = $row;
 
       if (count($data) >= $bannerLimit) {
