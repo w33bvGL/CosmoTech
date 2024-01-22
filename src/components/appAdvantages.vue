@@ -168,4 +168,10 @@
     }
   }
 }
+
+@media screen and (max-width: 1440px) {
+  .advantages {
+    display: none;
+  }
+}
 </style>
