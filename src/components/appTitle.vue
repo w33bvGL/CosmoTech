@@ -231,7 +231,7 @@ export default {
         text-transform: uppercase;
         letter-spacing: 0px;
         line-height: 40px;
-        font-size: 40px;
+        font-size: clamp(25px, 2.5vw, 40px);
         color: #ffffff;
         font-weight: 100;
         font-family: "roboto" !important;
@@ -241,13 +241,13 @@ export default {
         text-transform: uppercase;
         letter-spacing: 0px;
         line-height: 40px;
-        font-size: 50px;
+        font-size: clamp(20px, 2.5vw, 50px);
         color: #ffffff;
         font-weight: 400;
       }
 
       .sw-model-description {
-        font-size: 18px;
+        font-size: clamp(15px, 2.5vw, 17px);
         font-weight: 500;
       }
 
@@ -295,7 +295,7 @@ export default {
     gap: 20px;
 
     .elementor-el {
-      height: 500px;
+      aspect-ratio: 2 / 1;
       display: block;
     }
 
@@ -336,13 +336,13 @@ export default {
           align-items: center;
 
           .el-banner-name {
-            font-size: 17px;
+            font-size: clamp(15px, 2.5vw, 17px);
             font-weight: 300;
             margin-bottom: 10px;
           }
 
           .el-banner-title {
-            font-size: 25px;
+            font-size: clamp(18px, 2.5vw, 25px);
             font-weight: 300;
             text-align: center;
           }
@@ -407,12 +407,12 @@ export default {
           z-index: 2;
 
           .el-banner-name {
-            font-size: 25px;
+            font-size: clamp(px, 2.5vw, 25px);
             font-weight: 300;
           }
 
           .el-banner-description {
-            font-size: 17px;
+            font-size: clamp(15px, 2.5vw, 17px);
             font-weight: 500;
           }
         }
@@ -450,7 +450,11 @@ export default {
   }
 
   .elementor-el {
-    height: 400px !important;
+    aspect-ratio: 2.5 / 1 !important;
+  }
+
+  .sw-cont {
+    gap: 10px !important;
   }
 }
 
@@ -462,23 +466,7 @@ export default {
       gap: 5px;
       text-align: center;
       padding: 0 !important;
-
-      .sw-model-name {
-        font-size: 20px !important;
-      }
-
-      .sw-model-title {
-        font-size: 25px !important;
-      }
-
-      .sw-model-description {
-        font-size: 15px !important;
-      }
     }
-  }
-
-  .elementor-el {
-    height: 300px !important;
   }
 
   .slider-button {
@@ -495,7 +483,7 @@ export default {
 //  only for header
 @media screen and (max-width: 615px) {
   .elementor-el {
-    height: 200px !important;
+    width: 100%;
   }
 
   .sw-model-button {
