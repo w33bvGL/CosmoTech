@@ -4,20 +4,28 @@
       <div class="top-categories-tit">
         <div class="top-category-2" v-if="Banner418x200.length > 0">
           <div class="top-cat-2-inner-content">
-            <img
-              class="background-el"
-              :src="Banner418x200[0].image"
-              alt="BannerImage"
-            />
+            <img :src="Banner418x200[0].image" alt="BannerImage" />
             <button>{{ Banner418x200[0].name }}</button>
           </div>
           <div class="top-cat-2-inner-content">
-            <img
-              class="background-el"
-              :src="Banner418x200[1].image"
-              alt="BannerImage"
-            />
+            <img :src="Banner418x200[1].image" alt="BannerImage" />
             <button>{{ Banner418x200[1].name }}</button>
+          </div>
+        </div>
+        <div class="top-category-1">
+          <div class="top-category-1-inner-content">
+            <img src="" alt="BannerImage" />
+            <button></button>
+          </div>
+        </div>
+        <div class="top-category-2" v-if="Banner418x200.length > 0">
+          <div class="top-cat-2-inner-content">
+            <img :src="Banner418x200[2].image" alt="BannerImage" />
+            <button>{{ Banner418x200[2].name }}</button>
+          </div>
+          <div class="top-cat-2-inner-content">
+            <img :src="Banner418x200[3].image" alt="BannerImage" />
+            <button>{{ Banner418x200[3].name }}</button>
           </div>
         </div>
       </div>
