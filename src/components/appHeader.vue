@@ -93,11 +93,7 @@
         <div class="header-container-middle-logo">
           <a href="#">
             <span>
-              <img
-                src="assets/img/header/cosmoTech.png"
-                alt="CosmoLogo"
-                id="logo"
-              />
+              <img src="#" alt="CosmoLogo" id="logo" />
             </span>
           </a>
         </div>

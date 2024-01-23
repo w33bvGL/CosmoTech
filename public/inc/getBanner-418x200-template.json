@@ -1,0 +1,30 @@
+[
+  {
+    "id": "0",
+    "name": "Ականջակալներ",
+    "image": "../../assets/img/topBanner/banner-1.jpg",
+    "category": "tablets",
+    "subcategory": "97"
+  },
+  {
+    "id": "1",
+    "name": "Ակսեսուարներ",
+    "image": "../../assets/img/topBanner/banner-2.jpg",
+    "category": "accessories",
+    "subcategory": "97"
+  },
+  {
+    "id": "2",
+    "name": "Ականջակալներ",
+    "image": "../../assets/img/topBanner/banner-1.jpg",
+    "category": "tablets",
+    "subcategory": "97"
+  },
+  {
+    "id": "3",
+    "name": "Ականջակալներ",
+    "image": "../../assets/img/topBanner/banner-1.jpg",
+    "category": "tablets",
+    "subcategory": "97"
+  }
+]

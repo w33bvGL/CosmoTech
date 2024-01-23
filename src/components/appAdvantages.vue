@@ -161,7 +161,7 @@
           }
 
           .adv-content:last-child {
-            border: none; // for last item
+            border: none;
           }
         }
       }
