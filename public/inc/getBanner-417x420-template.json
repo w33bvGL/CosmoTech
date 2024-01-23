@@ -1,0 +1,16 @@
+[
+  {
+    "id": "0",
+    "name": "Ստեղնաշարեր",
+    "image": "../../assets/img/topBanner/banner-3.jpg",
+    "category": "tablets",
+    "subcategory": "97"
+  },
+  {
+    "id": "1",
+    "name": "Խաղեր & Կոնսոլներ",
+    "image": "../../assets/img/topBanner/banner-6.jpg",
+    "category": "accessories",
+    "subcategory": "97"
+  }
+]

@@ -446,7 +446,7 @@ export default {
   }
   .elementor {
     background-color: var(--elementor-background-color-mobile);
-    padding: 20px 0;
+    padding: 10px 0;
   }
 
   .elementor-el {
