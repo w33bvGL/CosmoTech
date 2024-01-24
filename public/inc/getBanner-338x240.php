@@ -7,7 +7,7 @@ require_once "../connect.php";
 
 try {
   $bannerLimit = 2;
-  $sql = "SELECT id, name, description, image, visibility, category, subcategory FROM advertisingBanner WHERE visibility = 'publish'";
+  $sql = "SELECT id, name, description, image, visibility, category, subcategory FROM advertisingBanner WHERE visibility = 'publish' ORDER BY RAND()";
 
   $result = mysqli_query($connect, $sql);
 
@@ -37,9 +37,6 @@ try {
       if (count($data) >= $bannerLimit) {
         break;
       }
-    } else {
-      // Обработка ошибки
-      echo "Failed to get image size for: $imagePath\n";
     }
   }
 
