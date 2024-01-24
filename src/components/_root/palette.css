@@ -60,5 +60,11 @@
   --adv-title-p-color: var(--color-666666);
 
   /* appTopBanners */
-  --app-banner-button-hover-color: var(--color-opacitywhite2); 
+  --app-banner-button-hover-color: var(--color-opacitywhite2);
+
+  /* appTopFeaturedProducts */
+  --top-f-prod-card-inf-prod-price-new-price-color: var(--color-0063d1);
+  --top-f-prod-card-inf-prod-name-color-hov: var(--color-0063d1);
+  --top-f-card-old-price-color: var(--color-666666);
+  --top-f-prod-card-inf-prod-description-color: var(--color-666666);
 }

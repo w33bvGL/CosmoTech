@@ -14,6 +14,9 @@
   <!-- app Top Categories Start -->
   <appTopBanner></appTopBanner>
   <!-- app Top Categories End -->
+  <!-- app Top Featured Products Start -->
+  <appTopFeaturedProducts></appTopFeaturedProducts>
+  <!-- app Top Featured Products End -->
 </template>
 <script>
 import appHeader from "./components/appHeader.vue";
@@ -21,6 +24,7 @@ import bottomNavbar from "./components/appBottomNavigation.vue";
 import appTitle from "./components/appTitle.vue";
 import appAdvantages from "./components/appAdvantages.vue";
 import appTopBanner from "./components/appTopBanner.vue";
+import appTopFeaturedProducts from "./components/appTopFeaturedProducts.vue";
 import "@/components/_root/root.scss";
 import "@/components/_root/palette.css";
 
@@ -32,6 +36,7 @@ export default {
     appTitle,
     appAdvantages,
     appTopBanner,
+    appTopFeaturedProducts,
   },
 };
 </script>

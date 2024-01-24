@@ -306,7 +306,6 @@ header {
   }
 
   ul li {
-    font-size: 13px !important;
     display: flex;
     cursor: pointer;
     transition: 0.2s;
@@ -413,7 +412,7 @@ header {
         width: 100%;
         height: 50px;
         border: none;
-        font-size: inherit;
+
         line-height: inherit;
         text-align: inherit;
         text-transform: inherit;
@@ -441,7 +440,7 @@ header {
         vertical-align: top;
         height: 50px;
         border: none;
-        font-size: inherit;
+
         line-height: inherit;
         text-align: inherit;
         text-transform: inherit;
@@ -524,13 +523,12 @@ header {
         .title-name {
           opacity: 0.9;
           letter-spacing: 1px;
-          font-size: 9px !important;
+
           white-space: nowrap;
         }
 
         span {
           margin-top: 2px;
-          font-size: 13px;
         }
       }
 

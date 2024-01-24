@@ -3,7 +3,7 @@
     "id": "7",
     "name": "Նոր macbook Pro",
     "description": "Գերհզոր M3 չիպով Արդեն վաճառքում",
-    "image": "../../assets/img/title/mainBanner-1.webp",
+    "image": "../../assets/img/title/mainBanner-1.jpg",
     "visibility": "publish",
     "category": "tablets",
     "subcategory": "97"
@@ -12,7 +12,7 @@
     "id": "8",
     "name": "Ամանորյա Զեղչեր",
     "description": "Խաղային նոր ակսեսուարների համար",
-    "image": "../../assets/img/title/mainBanner-2.webp",
+    "image": "../../assets/img/title/mainBanner-2.jpg",
     "visibility": "publish",
     "category": "accessories",
     "subcategory": "97"
@@ -21,7 +21,16 @@
     "id": "9",
     "name": "HONOR 90 Pro lite",
     "description": "կիսվիր հետաքրքիր պահերով",
-    "image": "../../assets/img/title/mainBanner-3.webp",
+    "image": "../../assets/img/title/mainBanner-3.jpg",
+    "visibility": "publish",
+    "category": "smartphone",
+    "subcategory": "97"
+  },
+  {
+    "id": "9",
+    "name": "HONOR 90 Pro lite",
+    "description": "կիսվիր հետաքրքիր պահերով",
+    "image": "../../assets/img/title/mainBanner-4.jpg",
     "visibility": "publish",
     "category": "smartphone",
     "subcategory": "97"

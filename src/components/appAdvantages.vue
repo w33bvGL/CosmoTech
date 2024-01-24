@@ -148,7 +148,6 @@
 
                 h4 {
                   margin-bottom: 4px;
-                  font-size: 13px;
                   text-transform: uppercase;
                   font-weight: bold;
                 }

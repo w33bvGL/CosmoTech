@@ -134,7 +134,7 @@ export default {
             text-transform: uppercase;
             letter-spacing: 1px;
             border-radius: 4px;
-            font-size: 12px;
+
             cursor: pointer;
             transition: all 0.3s;
 
@@ -184,7 +184,6 @@ export default {
             text-transform: uppercase;
             letter-spacing: 1px;
             border-radius: 4px;
-            font-size: 12px;
             transition: all 0.3s;
             cursor: pointer;
 
@@ -222,7 +221,6 @@ export default {
   .top-category-2 {
     button {
       padding: 8px 10px !important;
-      font-size: 10px !important;
     }
   }
 }
@@ -251,7 +249,6 @@ export default {
     gap: 5px !important;
     button {
       padding: 5px 10px !important;
-      font-size: 8px !important;
       background-color: var(--app-banner-button-hover-color);
       color: white;
     }

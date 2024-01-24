@@ -206,6 +206,10 @@ export default {
       position: absolute;
       width: 100%;
       height: 100%;
+      object-fit: cover;
+      object-position: top;
+      border: 1px solid rgba(102, 102, 102, 0.1);
+      border-radius: 5px;
     }
 
     .animate {
@@ -226,14 +230,14 @@ export default {
       opacity: 0;
       transform: translateY(100px);
       transition: 1.2s ease all;
+      color: white !important;
+      font-weight: bold;
 
       .sw-model-name {
         text-transform: uppercase;
         letter-spacing: 0px;
         line-height: 40px;
-        font-size: clamp(25px, 2.5vw, 40px);
-        color: #ffffff;
-        font-weight: 100;
+
         font-family: "roboto" !important;
       }
 
@@ -241,13 +245,9 @@ export default {
         text-transform: uppercase;
         letter-spacing: 0px;
         line-height: 40px;
-        font-size: clamp(20px, 2.5vw, 50px);
-        color: #ffffff;
-        font-weight: 400;
       }
 
       .sw-model-description {
-        font-size: clamp(15px, 2.5vw, 17px);
         font-weight: 500;
       }
 
@@ -255,7 +255,6 @@ export default {
         padding: 15px 0;
         border-radius: 5px;
         text-transform: uppercase;
-        font-size: 12px;
         font-weight: bold;
         letter-spacing: 1px;
         width: 150px;
@@ -336,13 +335,11 @@ export default {
           align-items: center;
 
           .el-banner-name {
-            font-size: clamp(15px, 2.5vw, 17px);
             font-weight: 300;
             margin-bottom: 10px;
           }
 
           .el-banner-title {
-            font-size: clamp(18px, 2.5vw, 25px);
             font-weight: 300;
             text-align: center;
           }
@@ -353,7 +350,6 @@ export default {
           background-color: transparent;
           border: 2px solid var(--color-white);
           color: var(--color-white);
-          font-size: 15px;
           font-weight: 500;
           letter-spacing: 1px;
           border-radius: 4px;
@@ -407,12 +403,10 @@ export default {
           z-index: 2;
 
           .el-banner-name {
-            font-size: clamp(px, 2.5vw, 25px);
             font-weight: 300;
           }
 
           .el-banner-description {
-            font-size: clamp(15px, 2.5vw, 17px);
             font-weight: 500;
           }
         }
@@ -444,6 +438,7 @@ export default {
   .el-title-big {
     width: 100% !important;
   }
+
   .elementor {
     background-color: var(--elementor-background-color-mobile);
     padding: 10px 0;
