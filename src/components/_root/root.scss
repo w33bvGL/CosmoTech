@@ -170,9 +170,26 @@ template {
 
 body {
   font-family: "cosmo" !important;
-  font-size: 15px;
+  font-size: clamp(10px, 2.5vw, 15px); // standart font size
   color: var(--body-font-color);
   background-color: var(--color-white);
+}
+
+@media screen and (max-width: 768px) {
+  ::selection {
+    background: transparent;
+  }
+
+  :active {
+    text-decoration: none !important;
+    outline: none !important;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -ms-touch-action: manipulation;
+  }
 }
 
 ul {

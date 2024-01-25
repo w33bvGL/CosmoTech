@@ -237,7 +237,8 @@ export default {
         text-transform: uppercase;
         letter-spacing: 0px;
         line-height: 40px;
-
+        font-size: 2em;
+        color: black;
         font-family: "roboto" !important;
       }
 
@@ -245,10 +246,13 @@ export default {
         text-transform: uppercase;
         letter-spacing: 0px;
         line-height: 40px;
+        font-size: clamp(1em, 3em, 4em);
+        color: black;
       }
 
       .sw-model-description {
         font-weight: 500;
+        color: black;
       }
 
       .sw-model-button {
@@ -266,6 +270,7 @@ export default {
         border: none;
         color: var(--color-white);
         transition: 0.2s;
+        font-size: 0.8em;
 
         &:hover {
           background-color: var(--sw-model-button-hov);

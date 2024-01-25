@@ -3,7 +3,7 @@
     <div class="top-featured-products-inner">
       <div class="top-featured-products-tit">
         <div class="top-f-prod-title-h2">
-          <h3>Լավագույն Առաջարկվող <span>Ապրանքներ</span></h3>
+          <h2>Լավագույն Առաջարկվող <span>Ապրանքներ</span></h2>
         </div>
         <div class="top-f-prod-container">
           <div class="top-f-prod-cont-inner">
@@ -89,10 +89,6 @@ export default {
         text-align: center;
         width: 100%;
         margin-bottom: 10px;
-
-        h3 {
-        }
-
         span {
           font-weight: normal;
         }
@@ -123,6 +119,7 @@ export default {
   box-sizing: border-box;
   cursor: pointer;
   aspect-ratio: 1 / 0.45;
+  transition: 0.5s all;
 
   &:hover .top-f-prod-card-image-block img {
     transform: scale(1.1);

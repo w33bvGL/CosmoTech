@@ -83,6 +83,7 @@ export default {
 .top-categories {
   width: 100%;
   padding: 40px 0;
+  font-size: 0.8em;
 
   .top-categories-inner {
     width: 100%;
@@ -129,12 +130,11 @@ export default {
             padding: 10px 15px;
             text-wrap: nowrap;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%);
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
             border-radius: 4px;
-
             cursor: pointer;
             transition: all 0.3s;
 
@@ -158,6 +158,7 @@ export default {
           cursor: pointer;
           overflow: hidden;
           aspect-ratio: 2 / 1;
+          transition: 0.5s all;
 
           img {
             position: absolute;
@@ -209,7 +210,7 @@ export default {
 
   .top-category-2 {
     width: 100% !important;
-    flex-direction: row !important;
+    flex-direction: column !important;
     gap: 10px !important;
   }
 

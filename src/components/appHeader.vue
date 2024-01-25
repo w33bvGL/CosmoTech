@@ -291,6 +291,7 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    font-size: 0.8em;
   }
 
   ul {
@@ -494,6 +495,7 @@ header {
     width: 100%;
     align-items: center;
     height: 100%;
+    font-size: 0.8em;
 
     .content-box-link {
       display: flex;

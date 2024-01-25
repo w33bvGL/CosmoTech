@@ -150,10 +150,12 @@
                   margin-bottom: 4px;
                   text-transform: uppercase;
                   font-weight: bold;
+                  font-size: 0.9em;
                 }
 
                 p {
                   color: var(--adv-title-p-color);
+                  font-size: 0.8em;
                 }
               }
             }

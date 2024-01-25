@@ -1,38 +1,29 @@
 [
   {
-    "id": "7",
-    "name": "Նոր macbook Pro",
-    "description": "Գերհզոր M3 չիպով Արդեն վաճառքում",
+    "id": "1",
+    "name": "TechVibe Quantum X1",
+    "description": "TechVibe Quantum X1 Pro Նորագույն նոութբուք է որը համատեղում է ",
     "image": "../../assets/img/title/mainBanner-1.jpg",
     "visibility": "publish",
     "category": "tablets",
     "subcategory": "97"
   },
   {
-    "id": "8",
-    "name": "Ամանորյա Զեղչեր",
-    "description": "Խաղային նոր ակսեսուարների համար",
+    "id": "2",
+    "name": "Նոր macbook Pro",
+    "description": "Գերհզոր M3 չիպով Արդեն վաճառքում",
     "image": "../../assets/img/title/mainBanner-2.jpg",
     "visibility": "publish",
-    "category": "accessories",
+    "category": "tablets",
     "subcategory": "97"
   },
   {
-    "id": "9",
-    "name": "HONOR 90 Pro lite",
-    "description": "կիսվիր հետաքրքիր պահերով",
+    "id": "3",
+    "name": "SonicWave Pulse",
+    "description": "Իսկական երաժշտության սիրահարների համար",
     "image": "../../assets/img/title/mainBanner-3.jpg",
     "visibility": "publish",
-    "category": "smartphone",
-    "subcategory": "97"
-  },
-  {
-    "id": "9",
-    "name": "HONOR 90 Pro lite",
-    "description": "կիսվիր հետաքրքիր պահերով",
-    "image": "../../assets/img/title/mainBanner-4.jpg",
-    "visibility": "publish",
-    "category": "smartphone",
-    "subcategory": "97"
+    "category": "Headphones",
+    "subcategory": "0"
   }
 ]
