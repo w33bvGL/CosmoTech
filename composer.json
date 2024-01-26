@@ -1,6 +1,7 @@
 {
   "require": {
       "monolog/monolog": "^2.0",
-      "ext-gd": "*"
+      "ext-gd": "*",
+    "ext-curl": "*"
   }
 }

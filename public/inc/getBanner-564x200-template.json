@@ -1,0 +1,29 @@
+[
+  {
+    "id": "0",
+    "name": "Top Նոութբուքեր",
+    "description": "20% զեղչ ապրանքների վրա",
+    "image": "../assets/img/bottomBanner/banner-1.jpg",
+    "visibility": "publish",
+    "category": "smartphone",
+    "subcategory": "97"
+  },
+  {
+    "id": "1",
+    "name": "Ձայնային Սարքեր",
+    "description": "Անվճար առաքում 1000 ֏ ավելի պատվերների դեպքում",
+    "image": "../assets/img/bottomBanner/banner-2.jpg",
+    "visibility": "publish",
+    "category": "smartphone",
+    "subcategory": "97"
+  },
+  {
+    "id": "2",
+    "name": "Iphone Ակսեսուարներ",
+    "description": "Բարձր որակի ակսեսուարներ սկսած 1000 ",
+    "image": "../assets/img/bottomBanner/banner-3.jpg",
+    "visibility": "publish",
+    "category": "smartphone",
+    "subcategory": "97"
+  }
+]

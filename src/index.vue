@@ -20,6 +20,9 @@
   <!-- app Message Line Start -->
   <appMessageLine></appMessageLine>
   <!-- app Message Line End -->
+  <!-- app Bottom Banners Start -->
+  <appBotBanners></appBotBanners>
+  <!-- app Bottom Banners End -->
 </template>
 <script>
 import appHeader from "./components/appHeader.vue";
@@ -29,6 +32,7 @@ import appAdvantages from "./components/appAdvantages.vue";
 import appTopBanner from "./components/appTopBanner.vue";
 import appTopFeaturedProducts from "./components/appTopFeaturedProducts.vue";
 import appMessageLine from "./components/appMessageLine.vue";
+import appBotBanners from "./components/appBotBanners.vue";
 import "@/components/_root/root.scss";
 import "@/components/_root/palette.css";
 
@@ -42,6 +46,7 @@ export default {
     appTopBanner,
     appTopFeaturedProducts,
     appMessageLine,
+    appBotBanners,
   },
 };
 </script>

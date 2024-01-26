@@ -6,7 +6,7 @@ require_once "../connect.php";
 
 try {
   $topFprodLimit = 12;
-$sql = "SELECT id, name, description, new_price, old_price, img1, img1_alt, category, subcategory FROM product WHERE visibility = 'publish' OR quantity >= 1 OR purchase_count > 100 ORDER BY RAND()";
+$sql = "SELECT id, name, description, new_price, old_price, img1, img1_alt, category, subcategory FROM product WHERE visibility = 'publish' AND quantity >= 1 AND purchase_count > 100 ORDER BY RAND()";
 
 
   $result = mysqli_query($connect, $sql);

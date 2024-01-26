@@ -34,7 +34,7 @@
 .line {
   width: 100%;
   padding: 15px 0;
-  background-color: #0059bc;
+  background-color: #263c97;
   color: white;
 
   .line-inner {
