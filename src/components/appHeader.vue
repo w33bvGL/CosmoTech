@@ -98,7 +98,7 @@
           </a>
         </div>
         <div class="header-container-middle-search-and-burger-menu">
-          <div class="burgermenu" onclick="">
+          <div class="burgermenu" onclick="openNav()">
             <svg
               width="25px"
               height="25px"

@@ -2,6 +2,9 @@
   <!-- header Start-->
   <appHeader></appHeader>
   <!-- header End -->
+  <!-- side Navigation Bar Start -->
+  <sideNavigation></sideNavigation>
+  <!-- side Navigation Bar End -->
   <!-- bottom Navigation Bar Start -->
   <bottomNavbar></bottomNavbar>
   <!-- bottom Navigation Bar End -->
@@ -37,6 +40,7 @@ import appTopFeaturedProducts from "./components/appTopFeaturedProducts.vue";
 import appMessageLine from "./components/appMessageLine.vue";
 import appBotBanners from "./components/appBotBanners.vue";
 import appIndexProducts from "./components/appIndexProducts.vue";
+import sideNavigation from "./components/sideNavigation.vue";
 import "@/components/_root/root.scss";
 import "@/components/_root/palette.css";
 
@@ -52,6 +56,7 @@ export default {
     appMessageLine,
     appBotBanners,
     appIndexProducts,
+    sideNavigation,
   },
 };
 </script>
