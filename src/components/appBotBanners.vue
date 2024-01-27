@@ -78,7 +78,7 @@ export default {
 }
 
 .bot-banners-content {
-  width: calc(33.333333% - 14px);
+  width: calc(33.3333333% - 13.4px);
   background-color: white;
   display: flex;
   box-sizing: border-box;
@@ -126,7 +126,7 @@ export default {
     padding: 10px 0;
 
     .bot-banners-content {
-      width: calc(50% - 10px);
+      width: calc(50% - 5px);
       aspect-ratio: 1 / 0.35;
     }
 
@@ -134,19 +134,19 @@ export default {
       display: none;
     }
     .bottom-banners-tit {
-      gap: 10px;
+      gap: 10px !important;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
   .bot-banners-content {
-    width: calc(100% - 0px);
-    aspect-ratio: 1 / 0.3;
+    width: calc(100% - 0px) !important;
+    aspect-ratio: 1 / 0.3 !important;
   }
 
   .bottom-banners-tit .bot-banners-content:nth-child(3) {
-    display: flex;
+    display: flex !important;
   }
 }
 </style>

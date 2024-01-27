@@ -23,6 +23,9 @@
   <!-- app Bottom Banners Start -->
   <appBotBanners></appBotBanners>
   <!-- app Bottom Banners End -->
+  <!-- app Index Products Start -->
+  <appIndexProducts></appIndexProducts>
+  <!-- app Index Products End -->
 </template>
 <script>
 import appHeader from "./components/appHeader.vue";
@@ -33,6 +36,7 @@ import appTopBanner from "./components/appTopBanner.vue";
 import appTopFeaturedProducts from "./components/appTopFeaturedProducts.vue";
 import appMessageLine from "./components/appMessageLine.vue";
 import appBotBanners from "./components/appBotBanners.vue";
+import appIndexProducts from "./components/appIndexProducts.vue";
 import "@/components/_root/root.scss";
 import "@/components/_root/palette.css";
 
@@ -47,6 +51,7 @@ export default {
     appTopFeaturedProducts,
     appMessageLine,
     appBotBanners,
+    appIndexProducts,
   },
 };
 </script>

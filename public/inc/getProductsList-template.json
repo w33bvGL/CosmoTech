@@ -1,0 +1,134 @@
+[
+  {
+    "id": "0",
+    "name": "SX-2357 Closed-Back Անլար ականջակալներ",
+    "description": "Նոր Օրիգինալ Անլար ականջակալներ SX-2357 Closed-black Սպիտակ գույնի",
+    "new_price": "5400",
+    "old_price": "6700",
+    "img1": "../../assets/img/topProducts/top-prod-1.jpg",
+    "img1_alt": "nkar 1",
+    "category": "headphones",
+    "subcategory": "97"
+  },
+  {
+    "id": "1",
+    "name": "Led 4K Smart TV Expo GSX Սպիտակ",
+    "description": "4K Smart TV Expo GSX Սպիտակ առաջարկում է նկարի անզուգական որակ և ժամանակակից դիզայնի գերժամանակակից տեխնոլոգիա: Նոր օրիգինալ SX-2357 փակ-սև ականջակալները հատուկ բաց գույնով ապահովում են ակնառու կատարում և ոճ:",
+    "new_price": "450.000",
+    "old_price": "680.000",
+    "img1": "../../assets/img/topProducts/top-prod-2.jpg",
+    "img1_alt": "nkar 1",
+    "category": "headphones",
+    "subcategory": "97"
+  },
+  {
+    "id": "2",
+    "name": "SAMSUNG a 71s+ ultra Սմարտֆոն Սև գույնի",
+    "description": "SAMSUNG a 71s+ ultra-ն հզոր սմարթֆոն է Samsung-ի առաջադեմ տեխնոլոգիաներով: Նորաոճ սև գույնով այս սմարթֆոնը համատեղում է բարձր կատարողականությունը և առաջադեմ հնարավորությունները՝ օգտատերերի անզուգական փորձառություն ապահովելու համար:",
+    "new_price": "87.500",
+    "old_price": "102.750",
+    "img1": "../../assets/img/topProducts/top-prod-3.jpg",
+    "img1_alt": "nkar 1",
+    "category": "headphones",
+    "subcategory": "97"
+  },
+  {
+    "id": "3",
+    "name": "RapidConnect Elite Pro USB Cable",
+    "description": "RapidConnect Elite Pro USB մալուխը նորարարական և բարձրորակ USB մալուխ է, որը նախատեսված է ապահովելու արագ և հուսալի տվյալների փոխանցում և լիցքավորում ձեր սարքերի համար: Այս մալուխը նախագծված է առաջադեմ տեխնոլոգիաների կիրառմամբ՝ կատարողականության և հուսալիության ամենաբարձր չափանիշներին համապատասխանելու համար:",
+    "new_price": "1500",
+    "old_price": "2700",
+    "img1": "../../assets/img/topProducts/top-prod-4.jpg",
+    "img1_alt": "nkar 1",
+    "category": "headphones",
+    "subcategory": "97"
+  },
+  {
+    "id": "4",
+    "name": "TechVibe Quantum X1 Pro Laptop",
+    "description": "TechVibe Quantum X1 Pro նոութբուքը նորագույն նոութբուք է, որը համատեղում է ակնառու կատարումը, նրբագեղ դիզայնը և առաջադեմ տեխնոլոգիաները: Այս նոութբուքը նախատեսված է նրանց համար, ովքեր պահանջում են բարձր կատարողականություն այսօրվա բջջային կենսակերպում:",
+    "new_price": "120.500",
+    "old_price": "180.000",
+    "img1": "../../assets/img/topProducts/top-prod-5.jpg",
+    "img1_alt": "nkar 1",
+    "category": "headphones",
+    "subcategory": "97"
+  },
+  {
+    "id": "5",
+    "name": "Apple MacBook Pro 13-inch (2022)",
+    "description": "Apple MacBook Pro 13-դյույմանոց (2022) նոութբուք է, որը մարմնավորում է նրբագեղություն, կատարողականություն և առաջադեմ տեխնոլոգիա: Լեգենդար Apple-ի կողմից ստեղծված այս MacBook Pro-ն նախատեսված է պրոֆեսիոնալ աշխատանքի և ժամանցի ոլորտում օգտագործողների ամենաբարձր պահանջները բավարարելու համար:",
+    "new_price": "520.000",
+    "old_price": "780.000",
+    "img1": "../../assets/img/topProducts/top-prod-6.jpg",
+    "img1_alt": "nkar 1",
+    "category": "headphones",
+    "subcategory": "97"
+  },
+  {
+    "id": "6",
+    "name": "PowerVibe TurboCharge X2 USB Wall Charger",
+    "description": "PowerVibe TurboCharge X2-ը հզոր լիցքավորման միավոր է ձեր սմարթֆոնի, պլանշետի, նոութբուքի կամ այլ սարքերի համար: Նորարար դիզայնով և բարձր կատարողականությամբ այս լիցքավորման տուփը նախատեսված է արագ և հուսալի լիցքավորման կարիքները բավարարելու համար:",
+    "new_price": "2000",
+    "old_price": "4500",
+    "img1": "../../assets/img/topProducts/top-prod-7.jpg",
+    "img1_alt": "nkar 1",
+    "category": "headphones",
+    "subcategory": "97"
+  },
+  {
+    "id": "7",
+    "name": "GamerTech StealthX Pro Gaming Mouse",
+    "description": "GamerTech StealthX Pro-ն խաղային մկնիկ է, որը նախատեսված է խաղացողների համար, ովքեր գնահատում են բարձր կատարողականությունը, ճշգրտությունը և հարմարավետությունը իրենց խաղային սեսիաների ընթացքում: Նորարար դիզայնով և առաջադեմ տեխնոլոգիայով այս մկնիկը նախագծված է խաղալու լավագույն փորձը մատուցելու համար:",
+    "new_price": "12.000",
+    "old_price": "15.500",
+    "img1": "../../assets/img/topProducts/top-prod-8.jpg",
+    "img1_alt": "nkar 1",
+    "category": "headphones",
+    "subcategory": "97"
+  },
+  {
+    "id": "8",
+    "name": "TechMaster ProSeries X Gaming Desktop",
+    "description": "TechMaster ProSeries X-ը խաղային աշխատասեղան է, որը նախատեսված է նրանց համար, ովքեր ձգտում են առավելագույն արդյունավետություն ունենալ տեսախաղերի և ստեղծագործական առաջադրանքների աշխարհում:",
+    "new_price": "95.000",
+    "old_price": "150.000",
+    "img1": "../../assets/img/topProducts/top-prod-9.jpg",
+    "img1_alt": "nkar 1",
+    "category": "headphones",
+    "subcategory": "97"
+  },
+  {
+    "id": "9",
+    "name": "SonicWave Pulse",
+    "description": "SonicWave Pulse-ը նորարարական անլար ականջակալներ են, որոնք նախատեսված են իսկական երաժշտության սիրահարների համար: Հագեցած առաջադեմ աղմուկի նվազեցման տեխնոլոգիայով՝ դուք կարող եք ընկղմվել երաժշտության աշխարհում առանց արտաքին միջամտության: Էրգոնոմիկ դիզայնը ապահովում է հարմարավետ կրում երկար ժամերի ընթացքում:",
+    "new_price": "15.575",
+    "old_price": "30.500",
+    "img1": "../../assets/img/topProducts/top-prod-10.jpg",
+    "img1_alt": "nkar 1",
+    "category": "headphones",
+    "subcategory": "97"
+  },
+  {
+    "id": "10",
+    "name": "SkyRover X7",
+    "description": "Նկարագրություն. SkyRover X7-ը տպավորիչ հնարավորություններով գերժամանակակից քառակոպտեր է: Հագեցած է բարձրորակ տեսախցիկով, որը կարող է նկարահանել 4K տեսանյութ և առաջադեմ GPS համակարգ՝ ճշգրիտ նավիգացիայի համար: Թեթև և կոմպակտ SkyRover X7-ը իդեալական է օդային լուսանկարչության և արկածային էնտուզիաստների համար:",
+    "new_price": "325.000",
+    "old_price": "450.000",
+    "img1": "../../assets/img/topProducts/top-prod-11.jpg",
+    "img1_alt": "nkar 1",
+    "category": "headphones",
+    "subcategory": "97"
+  },
+  {
+    "id": "11",
+    "name": "UltraVision 8000X",
+    "description": "UltraVision 8000X-ը նորարարական 8K հեռուստացույց է, որն առաջարկում է անհավատալի լուծում և պատկերի անզուգական որակ: Առաջադեմ HDR տեխնոլոգիայի և գունային լայն սպեկտրի շնորհիվ յուրաքանչյուր կադր կենդանանում է վառ գույներով և խորը երանգներով: Ժամանակակից բարակ շրջանակի դիզայնը UltraVision 8000X-ը դարձնում է ձեր դեկորների ոճային հավելումը:",
+    "new_price": "1.350.000",
+    "old_price": "1.750.000",
+    "img1": "../../assets/img/topProducts/top-prod-12.jpg",
+    "img1_alt": "nkar 1",
+    "category": "headphones",
+    "subcategory": "97"
+  }
+]

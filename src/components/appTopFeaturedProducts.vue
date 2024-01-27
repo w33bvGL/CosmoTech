@@ -155,7 +155,7 @@ export default {
       font-weight: bold;
       transition: 0.2s;
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
@@ -229,14 +229,11 @@ export default {
     }
   }
 
+  .top-f-prod-card-information {
+    padding: 0 !important;
+  }
   .top-f-prod-title-h2 {
     margin: 0 !important;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .top-f-prod-card {
-    width: 100%;
   }
 }
 </style>
