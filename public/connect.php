@@ -1,5 +1,5 @@
 <?php 
-$serv_name = "192.168.1.6"; 
+$serv_name = "172.17.64.1"; 
 $serv_username = "root";
 $serv_pass = "";
 $db_name = "onlineshop"; 
