@@ -29,6 +29,9 @@
   <!-- app Index Products Start -->
   <appIndexProducts></appIndexProducts>
   <!-- app Index Products End -->
+  <!-- app Footer Start -->
+  <appFooter></appFooter>
+  <!-- app Footer End -->
 </template>
 <script>
 import appHeader from "./components/appHeader.vue";
@@ -41,6 +44,7 @@ import appMessageLine from "./components/appMessageLine.vue";
 import appBotBanners from "./components/appBotBanners.vue";
 import appIndexProducts from "./components/appIndexProducts.vue";
 import sideNavigation from "./components/sideNavigation.vue";
+import appFooter from "./components/appFooter.vue";
 import "@/components/_root/root.scss";
 import "@/components/_root/palette.css";
 
@@ -57,6 +61,7 @@ export default {
     appBotBanners,
     appIndexProducts,
     sideNavigation,
+    appFooter,
   },
 };
 </script>
