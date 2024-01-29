@@ -116,9 +116,10 @@
         </div>
         <div class="copyright">
           <div class="company">
+            <p>Վեբ Կայքը by</p>
             <img
               src="../../public/assets/Emerald-white.png"
-              alt="powered-by-atom"
+              alt="powered-by-emerald"
             />
           </div>
           <div class="payment-methods">
@@ -310,9 +311,9 @@ footer {
 
   .company {
     display: flex;
-    margin: 10px 0;
-    gap: 50px;
-
+    margin: 5px 0;
+    align-items: center;
+    color: #ffffff4d;
     img {
       height: 50px;
       filter: grayscale(1);
@@ -407,7 +408,6 @@ footer {
   }
 
   .company {
-    gap: 50px !important;
     img {
       height: 35px !important;
     }
