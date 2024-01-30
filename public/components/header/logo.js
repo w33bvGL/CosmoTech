@@ -1,8 +1,9 @@
+var logoMedia = window.matchMedia("(max-width: 1024px)");
+
 function changeImagePath() {
-  var logo = document.getElementById("logo");
-  var windowWidth = window.innerWidth;
-  var changeSize = 1024;
-  if (windowWidth <= changeSize) {
+  let logo = document.getElementById("logo");
+
+  if (logoMedia.matches) {
     logo.src = "assets/img/header/cosmoTech-s.png";
   } else {
     logo.src = "assets/img/header/cosmoTech.png";
@@ -14,4 +15,4 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 window.onload = changeImagePath;
-window.onresize = changeImagePath;
+logoMedia.addListener(changeImagePath);

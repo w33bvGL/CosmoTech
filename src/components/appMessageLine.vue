@@ -2,7 +2,7 @@
   <section class="line">
     <div class="line-inner">
       <div class="line-tit">
-        <marquee behavior="" direction="left" loop="infinite">
+        <marquee behavior="" direction="">
           <div class="markQUEE">
             <p>
               <span>🚀 Սարքավորումների լայն տեսականի </span>Սմարթֆոններից և
