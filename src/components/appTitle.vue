@@ -374,9 +374,7 @@ export default {
       height: 100%;
       position: absolute;
       z-index: 1;
-      background-position: right;
-      background-repeat: no-repeat;
-      background-size: cover;
+      object-fit: cover;
       transition: var(--sw-banner-hover-transition);
     }
 
@@ -392,7 +390,6 @@ export default {
         height: 100%;
         color: var(--color-white);
         position: relative;
-        transition: 0.3s;
         overflow: hidden;
 
         &:hover .background-el {
@@ -436,8 +433,25 @@ export default {
 }
 
 @media screen and (max-width: 1024px) {
+  .elementor-title {
+    flex-direction: column;
+    gap: 10px !important;
+  }
+
+  .elementor-el {
+    aspect-ratio: 2.5 / 1 !important;
+  }
+
   .el-title-2 {
-    display: none !important;
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100% !important;
+    gap: 10px !important;
+    aspect-ratio: 1 / 0.25 !important;
+    .el-banner-cont {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   .el-title-big {
@@ -447,10 +461,6 @@ export default {
   .elementor {
     background-color: var(--elementor-background-color-mobile);
     padding: 10px 0;
-  }
-
-  .elementor-el {
-    aspect-ratio: 2.5 / 1 !important;
   }
 
   .sw-cont {
@@ -478,6 +488,23 @@ export default {
       border-radius: 20px;
     }
   }
+
+  .title-2-el-content {
+    border-radius: 20px;
+
+    .el-banner-cont {
+      padding: 10px !important;
+      gap: 10px !important;
+
+      h2 {
+        font-size: 1.2em;
+      }
+
+      p {
+        font-size: 0.9em;
+      }
+    }
+  }
 }
 
 //  only for header
@@ -494,6 +521,24 @@ export default {
 @media screen and (max-width: 425px) {
   .sw-model-name {
     display: none !important;
+  }
+
+  .elementor {
+    padding: 5px 0 !important;
+  }
+
+  .elementor-title {
+    gap: 5px !important;
+  }
+
+  .el-title-2 {
+    flex-direction: column !important;
+    gap: 5px !important;
+    aspect-ratio: 1 / 0.5 !important;
+  }
+
+  .el-banner-cont {
+    align-items: flex-start !important;
   }
 }
 </style>

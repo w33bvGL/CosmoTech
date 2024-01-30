@@ -10,11 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll(".nav-value-content").forEach(function (block) {
           block.style.display = "none";
         });
-
         targetElement.style.display = "flex";
-        console.log("ALL WORK! " + targetId);
-      } else {
-        console.error(targetId + " not found");
       }
     });
   });

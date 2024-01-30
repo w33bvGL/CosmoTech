@@ -1,4 +1,4 @@
-var hideNavbar = window.matchMedia("(min-width: 768px)");
+var hideNavbar = window.matchMedia("(min-width: 769px)");
 
 function closeNavigationBar() {
   let logo = document.getElementById("mySidenav");
@@ -6,7 +6,9 @@ function closeNavigationBar() {
 
   if (hideNavbar.matches) {
     logo.style.display = "flex";
-    navValue.style.display = "flex";
+    if (logo.style.display == "flex") {
+      navValue.style.display = "none";
+    }
   } else {
     logo.style.display = "none";
     navValue.style.display = "none";
