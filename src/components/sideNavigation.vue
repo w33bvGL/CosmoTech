@@ -7,13 +7,13 @@
       <a href="#" class="menu-item" data-target="nav-value-smartphone">
         <span>
           <img
-            src="../../public/assets/img/sideNavigation/smartphone.png"
+            src="../../public/assets/img/sideNavigation/smartphone.webp"
             alt="smartphones"
           />
           Սմարթֆոններ
         </span>
         <img
-          src="../../public/assets/img/sideNavigation/right.png"
+          src="../../public/assets/img/sideNavigation/right.webp"
           alt="arrow-right"
         />
       </a>
@@ -21,13 +21,13 @@
       <a href="#" class="menu-item" data-target="nav-value-tablets">
         <span>
           <img
-            src="../../public/assets/img/sideNavigation/tablets.png"
+            src="../../public/assets/img/sideNavigation/tablets.webp"
             alt="tablets"
           />
           Պլանշետներ
         </span>
         <img
-          src="../../public/assets/img/sideNavigation/right.png"
+          src="../../public/assets/img/sideNavigation/right.webp"
           alt="arrow-right"
         />
       </a>
@@ -35,13 +35,13 @@
       <a href="#" class="menu-item" data-target="nav-value-notebook">
         <span>
           <img
-            src="../../public/assets/img/sideNavigation/notebook.png"
+            src="../../public/assets/img/sideNavigation/notebook.webp"
             alt="notebook"
           />
           Նոթբուքեր
         </span>
         <img
-          src="../../public/assets/img/sideNavigation/right.png"
+          src="../../public/assets/img/sideNavigation/right.webp"
           alt="arrow-right"
         />
       </a>
@@ -49,13 +49,13 @@
       <a href="#" class="menu-item" data-target="nav-value-desktop">
         <span>
           <img
-            src="../../public/assets/img/sideNavigation/computers.png"
+            src="../../public/assets/img/sideNavigation/computers.webp"
             alt="computers"
           />
           Համակարգիչներ
         </span>
         <img
-          src="../../public/assets/img/sideNavigation/right.png"
+          src="../../public/assets/img/sideNavigation/right.webp"
           alt="arrow-right"
         />
       </a>
@@ -63,13 +63,13 @@
       <a href="#" class="menu-item" data-target="nav-value-monitor">
         <span>
           <img
-            src="../../public/assets/img/sideNavigation/monitors.png"
+            src="../../public/assets/img/sideNavigation/monitors.webp"
             alt="monitors"
           />
           Մոնիտորներ
         </span>
         <img
-          src="../../public/assets/img/sideNavigation/right.png"
+          src="../../public/assets/img/sideNavigation/right.webp"
           alt="arrow-right"
         />
       </a>
@@ -77,24 +77,24 @@
       <a href="#" class="menu-item" data-target="nav-value-printer">
         <span>
           <img
-            src="../../public/assets/img/sideNavigation/printers.png"
+            src="../../public/assets/img/sideNavigation/printers.webp"
             alt="printers"
           />
           Տպիչներ
         </span>
         <img
-          src="../../public/assets/img/sideNavigation/right.png"
+          src="../../public/assets/img/sideNavigation/right.webp"
           alt="arrow-right"
         />
       </a>
 
       <a href="#" class="menu-item" data-target="nav-value-tv">
         <span>
-          <img src="../../public/assets/img/sideNavigation/tv.png" alt="tv" />
+          <img src="../../public/assets/img/sideNavigation/tv.webp" alt="tv" />
           Հեռուստացույցներ
         </span>
         <img
-          src="../../public/assets/img/sideNavigation/right.png"
+          src="../../public/assets/img/sideNavigation/right.webp"
           alt="arrow-right"
         />
       </a>
@@ -102,13 +102,13 @@
       <a href="#" class="menu-item" data-target="nav-value-audio-video">
         <span>
           <img
-            src="../../public/assets/img/sideNavigation/audio-video.png"
+            src="../../public/assets/img/sideNavigation/audio-video.webp"
             alt="audio-video"
           />
           Աուդիո-վիդեո սարքեր
         </span>
         <img
-          src="../../public/assets/img/sideNavigation/right.png"
+          src="../../public/assets/img/sideNavigation/right.webp"
           alt="arrow-right"
         />
       </a>
@@ -116,13 +116,13 @@
       <a href="#" class="menu-item" data-target="nav-value-camera">
         <span>
           <img
-            src="../../public/assets/img/sideNavigation/camera.png"
+            src="../../public/assets/img/sideNavigation/camera.webp"
             alt="camera"
           />
           Ֆոտոխցիկներ
         </span>
         <img
-          src="../../public/assets/img/sideNavigation/right.png"
+          src="../../public/assets/img/sideNavigation/right.webp"
           alt="arrow-right"
         />
       </a>
@@ -130,13 +130,13 @@
       <a href="#" class="menu-item" data-target="nav-value-projector">
         <span>
           <img
-            src="../../public/assets/img/sideNavigation/projector.png"
+            src="../../public/assets/img/sideNavigation/projector.webp"
             alt="projector"
           />
           Պրոեկտորներ
         </span>
         <img
-          src="../../public/assets/img/sideNavigation/right.png"
+          src="../../public/assets/img/sideNavigation/right.webp"
           alt="arrow-right"
         />
       </a>
@@ -144,13 +144,13 @@
       <a href="#" class="menu-item" data-target="nav-value-game-console">
         <span>
           <img
-            src="../../public/assets/img/sideNavigation/game-console.png"
+            src="../../public/assets/img/sideNavigation/game-console.webp"
             alt="game-console"
           />
           Խաղային կոնսոլներ
         </span>
         <img
-          src="../../public/assets/img/sideNavigation/right.png"
+          src="../../public/assets/img/sideNavigation/right.webp"
           alt="arrow-right"
         />
       </a>
@@ -158,13 +158,13 @@
       <a href="#" class="menu-item" data-target="nav-value-drones">
         <span>
           <img
-            src="../../public/assets/img/sideNavigation/drones.png"
+            src="../../public/assets/img/sideNavigation/drones.webp"
             alt="drones"
           />
           Դրոններ
         </span>
         <img
-          src="../../public/assets/img/sideNavigation/right.png"
+          src="../../public/assets/img/sideNavigation/right.webp"
           alt="arrow-right"
         />
       </a>
@@ -172,13 +172,13 @@
       <a href="#" class="menu-item" data-target="nav-value-watch">
         <span>
           <img
-            src="../../public/assets/img/sideNavigation/watch.png"
+            src="../../public/assets/img/sideNavigation/watch.webp"
             alt="watch"
           />
           Ժամացույցներ
         </span>
         <img
-          src="../../public/assets/img/sideNavigation/right.png"
+          src="../../public/assets/img/sideNavigation/right.webp"
           alt="arrow-right"
         />
       </a>
@@ -186,13 +186,13 @@
       <a href="#" class="menu-item" data-target="nav-value-accessories">
         <span>
           <img
-            src="../../public/assets/img/sideNavigation/accessories.png"
+            src="../../public/assets/img/sideNavigation/accessories.webp"
             alt="accessories"
           />
           Ակսեսուարներ
         </span>
         <img
-          src="../../public/assets/img/sideNavigation/right.png"
+          src="../../public/assets/img/sideNavigation/right.webp"
           alt="arrow-right"
         />
       </a>
@@ -213,7 +213,7 @@
       <div class="nav-category-image">
         <div class="nav-category-i">
           <img
-            src="../../public/assets/img/sideNavigation/cat-smartphone.png"
+            src="../../public/assets/img/sideNavigation/cat-smartphone.webp"
             alt="category-smartphone"
           />
           <h3>Սմարթֆոններ</h3>
@@ -240,7 +240,7 @@
       <div class="nav-category-image">
         <div class="nav-category-i">
           <img
-            src="../../public/assets/img/sideNavigation/cat-tablet.jpg"
+            src="../../public/assets/img/sideNavigation/cat-tablet.webp"
             alt="category-smartphone"
           />
           <h3>Պլանշետներ</h3>
@@ -267,7 +267,7 @@
       <div class="nav-category-image">
         <div class="nav-category-i">
           <img
-            src="../../public/assets/img/sideNavigation/cat-laptop.jpg"
+            src="../../public/assets/img/sideNavigation/cat-laptop.webp"
             alt="category-smartphone"
           />
           <h3>Նոթբուքեր</h3>
@@ -294,7 +294,7 @@
       <div class="nav-category-image">
         <div class="nav-category-i">
           <img
-            src="../../public/assets/img/sideNavigation/cat-desktop.jpg"
+            src="../../public/assets/img/sideNavigation/cat-desktop.webp"
             alt="category-smartphone"
           />
           <h3>Համակարգիչներ</h3>
@@ -348,7 +348,7 @@
       <div class="nav-category-image">
         <div class="nav-category-i">
           <img
-            src="../../public/assets/img/sideNavigation/cat-printer.jpg"
+            src="../../public/assets/img/sideNavigation/cat-printer.webp"
             alt="category-smartphone"
           />
           <h3>Տպիչներ</h3>
@@ -375,7 +375,7 @@
       <div class="nav-category-image">
         <div class="nav-category-i">
           <img
-            src="../../public/assets/img/sideNavigation/cat-tv.jpg"
+            src="../../public/assets/img/sideNavigation/cat-tv.webp"
             alt="category-smartphone"
           />
           <h3>Հեռուստացույցներ</h3>
@@ -403,7 +403,7 @@
       <div class="nav-category-image">
         <div class="nav-category-i">
           <img
-            src="../../public/assets/img/sideNavigation/cat-audio-video.jpg"
+            src="../../public/assets/img/sideNavigation/cat-audio-video.webp"
             alt="category-smartphone"
           />
           <h3>Աուդիո-վիդեո</h3>
@@ -432,7 +432,7 @@
       <div class="nav-category-image">
         <div class="nav-category-i">
           <img
-            src="../../public/assets/img/sideNavigation/cat-camera.jpg"
+            src="../../public/assets/img/sideNavigation/cat-camera.webp"
             alt="category-smartphone"
           />
           <h3>Ֆոտոխցիկներ</h3>
@@ -458,7 +458,7 @@
       <div class="nav-category-image">
         <div class="nav-category-i">
           <img
-            src="../../public/assets/img/sideNavigation/cat-projector.jpg"
+            src="../../public/assets/img/sideNavigation/cat-projector.webp"
             alt="category-smartphone"
           />
           <h3>Պրոեկտորներ</h3>
@@ -484,7 +484,7 @@
       <div class="nav-category-image">
         <div class="nav-category-i">
           <img
-            src="../../public/assets/img/sideNavigation/cat-game-console.jpg"
+            src="../../public/assets/img/sideNavigation/cat-game-console.webp"
             alt="category-smartphone"
           />
           <h3>Խաղային կոնսոլներ</h3>
@@ -536,7 +536,7 @@
       <div class="nav-category-image">
         <div class="nav-category-i">
           <img
-            src="../../public/assets/img/sideNavigation/cat-watch.jpg"
+            src="../../public/assets/img/sideNavigation/cat-watch.webp"
             alt="category-smartphone"
           />
           <h3>Ժամացույցներ</h3>
@@ -563,7 +563,7 @@
       <div class="nav-category-image">
         <div class="nav-category-i">
           <img
-            src="../../public/assets/img/sideNavigation/cat-accessories.jpg"
+            src="../../public/assets/img/sideNavigation/cat-accessories.webp"
             alt="category-smartphone"
           />
           <h3>Ակսեսուարներ</h3>

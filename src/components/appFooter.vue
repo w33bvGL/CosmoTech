@@ -30,35 +30,35 @@
               <div class="social-icon-cont">
                 <a href="#"
                   ><img
-                    src="../../public/assets/img/footer/youtube.png"
+                    src="../../public/assets/img/footer/youtube.webp"
                     alt="youtube"
                 /></a>
               </div>
               <div class="social-icon-cont">
                 <a href="#"
                   ><img
-                    src="../../public/assets/img/footer/linkedin.png"
+                    src="../../public/assets/img/footer/linkedin.webp"
                     alt="linkedin"
                 /></a>
               </div>
               <div class="social-icon-cont">
                 <a href="#"
                   ><img
-                    src="../../public/assets/img/footer/pinterest.png"
+                    src="../../public/assets/img/footer/pinterest.webp"
                     alt="pinterest"
                 /></a>
               </div>
               <div class="social-icon-cont">
                 <a href="#"
                   ><img
-                    src="../../public/assets/img/footer/whatsapp.png"
+                    src="../../public/assets/img/footer/whatsapp.webp"
                     alt="whatsapp"
                 /></a>
               </div>
               <div class="social-icon-cont">
                 <a href="#"
                   ><img
-                    src="../../public/assets/img/footer/facebook.png"
+                    src="../../public/assets/img/footer/facebook.webp"
                     alt="facebook"
                 /></a>
               </div>
@@ -116,23 +116,23 @@
         </div>
         <div class="copyright">
           <div class="company">
-            <p>Վեբ Կայքը by</p>
             <img
-              src="../../public/assets/Emerald-white.png"
-              alt="powered-by-emerald"
+              src="../../public/assets/atom-light.webp"
+              alt="powered-by-Atom-technologies"
             />
+            <img src="../../public/assets/cosmo-light.webp" alt="cosmo-tech" />
           </div>
           <div class="payment-methods">
             <img
-              src="../../public/assets/img/footer/payments-icons.png"
+              src="../../public/assets/img/footer/payments-icons.webp"
               alt="payment-methods"
             />
           </div>
         </div>
         <div class="copy">
           <p>
-            © 2024 Վեբկայքը by <a href="#">Emerald</a>, ԲՈԼՈՐ ԻՐԱՎՈՒՆՔՆԵՐԸ
-            ՊԱՇՏՊԱՆՎԱԾ ԵՆ
+            © 2024 Վեբկայքը by <a href="#">A.T.O.M</a>, © 2023 ԲՈԼՈՐ
+            ԻՐԱՎՈՒՆՔՆԵՐԸ ՊԱՇՏՊԱՆՎԱԾ ԵՆ
           </p>
         </div>
       </div>
@@ -312,6 +312,7 @@ footer {
   .company {
     display: flex;
     margin: 5px 0;
+    gap: 50px;
     align-items: center;
     color: #ffffff4d;
     img {
@@ -321,6 +322,7 @@ footer {
       cursor: pointer;
       &:hover {
         filter: grayscale(0);
+        transform: translateY(-5px);
       }
     }
   }

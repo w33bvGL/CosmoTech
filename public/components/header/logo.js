@@ -4,9 +4,9 @@ function changeImagePath() {
   let logo = document.getElementById("logo");
 
   if (logoMedia.matches) {
-    logo.src = "assets/img/header/cosmoTech-s.png";
+    logo.src = "assets/cosmo-small.webp";
   } else {
-    logo.src = "assets/img/header/cosmoTech.png";
+    logo.src = "assets/cosmo-dark.webp";
   }
 }
 

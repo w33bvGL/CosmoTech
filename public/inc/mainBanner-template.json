@@ -3,7 +3,7 @@
     "id": "1",
     "name": "TechVibe Quantum X1",
     "description": "TechVibe Quantum X1 Pro Նորագույն նոութբուք է որը համատեղում է ",
-    "image": "../../assets/img/title/mainBanner-1.jpg",
+    "image": "../../assets/img/title/mainBanner-1.webp",
     "visibility": "publish",
     "category": "tablets",
     "subcategory": "97"
@@ -12,7 +12,7 @@
     "id": "2",
     "name": "Նոր macbook Pro",
     "description": "Գերհզոր M3 չիպով Արդեն վաճառքում",
-    "image": "../../assets/img/title/mainBanner-2.jpg",
+    "image": "../../assets/img/title/mainBanner-2.webp",
     "visibility": "publish",
     "category": "tablets",
     "subcategory": "97"
@@ -21,7 +21,7 @@
     "id": "3",
     "name": "SonicWave Pulse",
     "description": "Իսկական երաժշտության սիրահարների համար",
-    "image": "../../assets/img/title/mainBanner-3.jpg",
+    "image": "../../assets/img/title/mainBanner-3.webp",
     "visibility": "publish",
     "category": "Headphones",
     "subcategory": "0"

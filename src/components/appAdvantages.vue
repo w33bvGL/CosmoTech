@@ -8,7 +8,7 @@
               <div class="advesting-child">
                 <div class="adv-img">
                   <img
-                    src="../../public/assets/img/advertising/shipped.png"
+                    src="../../public/assets/img/advertising/shipped.webp"
                     alt=""
                   />
                 </div>
@@ -22,7 +22,7 @@
               <div class="advesting-child">
                 <div class="adv-img">
                   <img
-                    src="../../public/assets/img/advertising/credit-card.png"
+                    src="../../public/assets/img/advertising/credit-card.webp"
                     alt=""
                   />
                 </div>
@@ -36,7 +36,7 @@
               <div class="advesting-child">
                 <div class="adv-img">
                   <img
-                    src="../../public/assets/img/advertising/chat.png"
+                    src="../../public/assets/img/advertising/chat.webp"
                     alt=""
                   />
                 </div>
@@ -50,7 +50,7 @@
               <div class="advesting-child">
                 <div class="adv-img">
                   <img
-                    src="../../public/assets/img/advertising/money.png"
+                    src="../../public/assets/img/advertising/money.webp"
                     alt=""
                   />
                 </div>
@@ -64,7 +64,7 @@
               <div class="advesting-child">
                 <div class="adv-img">
                   <img
-                    src="../../public/assets/img/advertising/id-card.png"
+                    src="../../public/assets/img/advertising/id-card.webp"
                     alt=""
                   />
                 </div>
