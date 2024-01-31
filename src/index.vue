@@ -3,7 +3,7 @@
   <appHeader></appHeader>
   <!-- header End -->
   <!-- side Navigation Bar Start -->
-  <sideNavigation></sideNavigation>
+  <appSideNavigation></appSideNavigation>
   <!-- side Navigation Bar End -->
   <!-- bottom Navigation Bar Start -->
   <bottomNavbar></bottomNavbar>
@@ -43,7 +43,7 @@ import appTopFeaturedProducts from "./components/appTopFeaturedProducts.vue";
 import appMessageLine from "./components/appMessageLine.vue";
 import appBotBanners from "./components/appBotBanners.vue";
 import appIndexProducts from "./components/appIndexProducts.vue";
-import sideNavigation from "./components/sideNavigation.vue";
+import appSideNavigation from "./components/appSideNavigation.vue";
 import appFooter from "./components/appFooter.vue";
 import "@/components/_root/root.scss";
 import "@/components/_root/palette.css";
@@ -60,7 +60,7 @@ export default {
     appMessageLine,
     appBotBanners,
     appIndexProducts,
-    sideNavigation,
+    appSideNavigation,
     appFooter,
   },
 };

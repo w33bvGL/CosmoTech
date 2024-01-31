@@ -21,7 +21,7 @@
       <a href="#" class="menu-item" data-target="nav-value-tablets">
         <span>
           <img
-            src="../../public/assets/img/sideNavigation/tablets.webp"
+            src="../../public/assets/img/sideNavigation/tablet.webp"
             alt="tablets"
           />
           Պլանշետներ
@@ -35,7 +35,7 @@
       <a href="#" class="menu-item" data-target="nav-value-notebook">
         <span>
           <img
-            src="../../public/assets/img/sideNavigation/notebook.webp"
+            src="../../public/assets/img/sideNavigation/laptop.webp"
             alt="notebook"
           />
           Նոթբուքեր
@@ -90,7 +90,10 @@
 
       <a href="#" class="menu-item" data-target="nav-value-tv">
         <span>
-          <img src="../../public/assets/img/sideNavigation/tv.webp" alt="tv" />
+          <img
+            src="../../public/assets/img/sideNavigation/smart-TV.webp"
+            alt="tv"
+          />
           Հեռուստացույցներ
         </span>
         <img
@@ -172,7 +175,7 @@
       <a href="#" class="menu-item" data-target="nav-value-watch">
         <span>
           <img
-            src="../../public/assets/img/sideNavigation/watch.webp"
+            src="../../public/assets/img/sideNavigation/smartwatch.webp"
             alt="watch"
           />
           Ժամացույցներ
@@ -617,7 +620,7 @@ export default {
 .sidenav {
   height: 100%;
   width: 0;
-  position: fixed;
+  position: absolute;
   z-index: 910;
   left: 0;
   background-color: #ffffff;
