@@ -2,14 +2,14 @@
   {
     "id": "0",
     "name": "Ստեղնաշարեր",
-    "image": "../../assets/img/topBanner/banner-3.jpg",
+    "image": "../../assets/img/topBanner/banner-3.webp",
     "category": "tablets",
     "subcategory": "97"
   },
   {
     "id": "1",
     "name": "Խաղեր & Կոնսոլներ",
-    "image": "../../assets/img/topBanner/banner-6.jpg",
+    "image": "../../assets/img/topBanner/banner-6.webp",
     "category": "accessories",
     "subcategory": "97"
   }

@@ -6,7 +6,7 @@
           <h3>Գրանցվեք Newsletter-ում</h3>
           <form action="" class="the-newsletter-form">
             <input type="email" required placeholder="Ձեր Էլ․ Հասցեն․․․" />
-            <button type="submit">
+            <button type="submit" aria-label="the Newsletter Button Submit">
               <svg
                 width="800px"
                 height="800px"

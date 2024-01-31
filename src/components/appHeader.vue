@@ -147,7 +147,7 @@
                 <option value="accessories">Ակսեսուարներ</option>
               </select>
               <input type="text" required placeholder="Փնտրիր որ գտնես․․․ " />
-              <button type="submit">
+              <button type="submit" aria-label="search">
                 <svg
                   class="w-[30px] h-[30px] text-gray-800 dark:text-white"
                   aria-hidden="true"
