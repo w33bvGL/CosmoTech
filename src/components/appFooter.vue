@@ -122,18 +122,18 @@
             />
             <img src="../../public/assets/cosmo-light.webp" alt="cosmo-tech" />
           </div>
-          <div class="payment-methods">
-            <img
-              src="../../public/assets/img/footer/payments-icons.webp"
-              alt="payment-methods"
-            />
+          <div class="copy">
+            <div class="payment-methods">
+              <img
+                src="../../public/assets/img/footer/payments-icons.webp"
+                alt="payment-methods"
+              />
+            </div>
+            <p>
+              © 2024 Վեբկայքը by <a href="#">A.T.O.M</a>, © 2023 ԲՈԼՈՐ
+              ԻՐԱՎՈՒՆՔՆԵՐԸ ՊԱՇՏՊԱՆՎԱԾ ԵՆ
+            </p>
           </div>
-        </div>
-        <div class="copy">
-          <p>
-            © 2024 Վեբկայքը by <a href="#">A.T.O.M</a>, © 2023 ԲՈԼՈՐ
-            ԻՐԱՎՈՒՆՔՆԵՐԸ ՊԱՇՏՊԱՆՎԱԾ ԵՆ
-          </p>
         </div>
       </div>
     </div>
@@ -304,21 +304,21 @@ footer {
 
 .copyright {
   width: 100%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
 
   .company {
     display: flex;
-    margin: 5px 0;
+    width: 100%;
     gap: 50px;
     align-items: center;
     color: #ffffff4d;
     img {
-      height: 50px;
+      height: 60px;
       filter: grayscale(1);
-      transition: 0.2s all;
+      transform: translateY(0);
+      transition: filter 0.2s, transform 0.2s;
       cursor: pointer;
       &:hover {
         filter: grayscale(0);
@@ -342,9 +342,12 @@ footer {
   display: flex;
   padding: 10px 0;
   text-align: center;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
   justify-content: flex-end;
   color: gray;
+  font-size: 0.8em;
   a {
     color: gray;
     transition: 0.2s;
@@ -377,17 +380,21 @@ footer {
   .quick-links {
     display: none;
   }
-
+  .copyright {
+    flex-direction: column;
+  }
   .company {
     gap: 50px !important;
     img {
-      height: 30px !important;
+      height: 50px !important;
     }
   }
+  .copy {
+    align-items: center !important;
+  }
+
   .payment-methods {
-    img {
-      height: 15px !important;
-    }
+    display: none !important;
   }
 }
 
@@ -403,16 +410,8 @@ footer {
     }
   }
 
-  .copy {
-    text-align: center;
-    justify-content: center;
-    font-size: 0.8em;
-  }
-
   .company {
-    img {
-      height: 35px !important;
-    }
+    justify-content: space-around;
   }
 }
 
@@ -422,8 +421,9 @@ footer {
   }
 
   .company {
-    width: 100% !important;
-    justify-content: space-evenly;
+    img {
+      height: 40px !important;
+    }
   }
 }
 
@@ -447,6 +447,12 @@ footer {
 
   .copyright {
     padding: 10px 0;
+  }
+
+  .company {
+    img {
+      height: 30px !important;
+    }
   }
 }
 </style>

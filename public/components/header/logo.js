@@ -9,10 +9,8 @@ function changeImagePath() {
     logo.src = "assets/cosmo-dark.webp";
   }
 }
-
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("load", function () {
   changeImagePath();
 });
 
-window.onload = changeImagePath;
 logoMedia.addListener(changeImagePath);

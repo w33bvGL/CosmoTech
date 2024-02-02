@@ -170,7 +170,7 @@ template {
 
 body {
   font-family: "cosmo" !important;
-  font-size: clamp(10px, 2.5vw, 15px); // standart font size
+  font-size: clamp(12px, 2.5vw, 15px); // standart font size
   color: var(--body-font-color);
   background-color: var(--color-white);
 }

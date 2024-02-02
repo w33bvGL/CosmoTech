@@ -4,33 +4,42 @@
       <div class="elementor-title">
         <div class="el-title-big elementor-el">
           <!-- slider Start -->
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div
-                class="swiper-slide"
-                v-for="banner in mainBanner"
-                :key="banner.id"
-              >
-                <img
-                  :src="banner.image"
-                  alt="mainBanner"
-                  class="sw-model-back-image"
-                />
-                <div class="sw-cont">
-                  <h2 class="sw-model-name">{{ banner.category }}</h2>
-                  <h2 class="sw-model-title">{{ banner.name }}</h2>
-                  <p class="sw-model-description">
-                    {{ banner.description }}
-                  </p>
-                  <button class="sw-model-button" @click="mainBannerGotoShop()">
-                    Տեսնել ավելին
-                  </button>
-                </div>
+          <swiper
+            class="swiper-container"
+            :slides-per-view="1"
+            :space-between="50"
+            :pagination="true"
+            @swiper="onSwiper"
+            :grabCursor="true"
+            :modules="modules"
+            :autoplay="{
+              delay: 2500,
+              disableOnInteraction: false,
+            }"
+            @slideChange="onSlideChange"
+          >
+            <swiper-slide
+              class="swiper-slide"
+              v-for="banner in mainBanner"
+              :key="banner.id"
+            >
+              <img
+                :src="banner.image"
+                alt="mainBanner"
+                class="sw-model-back-image"
+              />
+              <div class="sw-cont">
+                <h2 class="sw-model-name">{{ banner.category }}</h2>
+                <h2 class="sw-model-title">{{ banner.name }}</h2>
+                <p class="sw-model-description">
+                  {{ banner.description }}
+                </p>
+                <button class="sw-model-button" @click="mainBannerGotoShop()">
+                  Տեսնել ավելին
+                </button>
               </div>
-            </div>
-            <div class="swiper-button-next slider-button"></div>
-            <div class="swiper-button-prev slider-button"></div>
-          </div>
+            </swiper-slide>
+          </swiper>
           <!-- slider sliderEnd -->
         </div>
         <div class="el-title-2 elementor-el">
@@ -47,7 +56,6 @@
               </p>
             </div>
           </div>
-
           <div class="title-2-el-content" v-if="banner338x240.length > 1">
             <img
               class="background-el"
@@ -87,8 +95,25 @@
 
 <script>
 import axios from "axios";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    const onSwiper = () => {};
+    const onSlideChange = () => {};
+    return {
+      onSwiper,
+      onSlideChange,
+      modules: [Pagination, Autoplay],
+    };
+  },
   data() {
     return {
       banner338x240: [],
@@ -136,57 +161,11 @@ export default {
           console.log(error.response);
         });
     },
-    getMainActiveBanner() {
-      const acs = document.querySelector(".swiper-slide");
-      acs.querySelector(".sw-cont").classList.add("animate");
-    },
-    updateSwiper() {
-      if (this.swiper) {
-        this.swiper.update();
-      }
-    },
   },
   mounted() {
     this.getBanner338x240();
     this.getBanner338x500();
     this.getMainBanner();
-    window.onload = () => {
-      setTimeout(() => {
-        this.getMainActiveBanner();
-        this.updateSwiper(); // sw-update
-      }, 50);
-    };
-    window.onload = () => {
-      /* eslint-disable */
-      const swiper = new Swiper(".swiper-container", {
-        /* eslint-enable */
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        autoplay: {
-          delay: 8000,
-          disableOnInteraction: false,
-        },
-        loop: true,
-        effect: "slide",
-        speed: 400,
-        on: {
-          slideChangeTransitionStart: function () {
-            const activeSlide = document.querySelector(".swiper-slide-active");
-            activeSlide.querySelector(".sw-cont").classList.add("animate");
-          },
-          slideChangeTransitionEnd() {
-            document.querySelectorAll(".swiper-slide").forEach((slide) => {
-              if (!slide.classList.contains("swiper-slide-active")) {
-                slide.querySelector(".sw-cont").classList.remove("animate");
-              }
-            });
-          },
-        },
-      });
-      this.getMainActiveBanner();
-    };
   },
 };
 </script>
@@ -211,12 +190,6 @@ export default {
       border: 1px solid rgba(102, 102, 102, 0.1);
       border-radius: 5px;
     }
-
-    .animate {
-      opacity: 1 !important;
-      transform: translateY(0px) !important;
-    }
-
     .sw-cont {
       width: 100%;
       padding: 50px;
@@ -227,8 +200,6 @@ export default {
       justify-content: center;
       position: absolute;
       z-index: 2;
-      opacity: 0;
-      transform: translateY(100px);
       transition: 1.2s ease all;
       color: white !important;
       font-weight: bold;

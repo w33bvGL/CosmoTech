@@ -63,7 +63,15 @@ export default {
     appSideNavigation,
     appFooter,
   },
+  mounted() {},
+  methods: {},
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.mobile-nav-child a:nth-child(1) {
+  path {
+    stroke: var(--mobile-nav-buttons-active) !important;
+  }
+}
+</style>

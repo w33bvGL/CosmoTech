@@ -111,7 +111,6 @@ export default {
   box-sizing: border-box;
   cursor: pointer;
   aspect-ratio: 1 / 0.7;
-  transition: 0.5s all;
   flex-direction: column;
   border: 1px solid rgba(10, 10, 10, 0.05);
 

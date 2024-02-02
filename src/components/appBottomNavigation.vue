@@ -19,7 +19,7 @@
             />
           </svg>
         </a>
-        <a href="#" class="bloc-icon">
+        <router-link to="/search" class="bloc-icon">
           <svg
             class="w-[30px] h-[30px] text-gray-800 dark:text-white"
             aria-hidden="true"
@@ -35,7 +35,7 @@
               d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
             />
           </svg>
-        </a>
+        </router-link>
         <a href="#" class="bloc-icon">
           <svg
             class="w-[30px] h-[30px] text-gray-800 dark:text-white"

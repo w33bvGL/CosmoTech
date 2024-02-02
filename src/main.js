@@ -1,5 +1,8 @@
-window.__VUE_PROD_HYDRATION_MISMATCH_DETAILS__ = true;
+// main.js
 import { createApp } from "vue";
-import index from "./index.vue";
+import vApp from "./app.vue";
+import router from "./router.js";
 
-createApp(index).mount("#index");
+const app = createApp(vApp);
+app.use(router);
+app.mount("#app");

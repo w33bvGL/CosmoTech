@@ -93,7 +93,7 @@
         <div class="header-container-middle-logo">
           <a href="#">
             <span>
-              <img src="#" alt="CosmoLogo" id="logo" />
+              <img :src="logoPath" alt="CosmoLogo" id="logo" />
             </span>
           </a>
         </div>
@@ -260,7 +260,29 @@
 </template>
 
 <!-- the vue logic -->
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      logoPath: "",
+      logoMedia: window.matchMedia("(max-width: 1024px)"),
+    };
+  },
+  methods: {
+    changeImagePath() {
+      if (this.logoMedia.matches) {
+        this.logoPath = "assets/cosmo-small.webp";
+      } else {
+        this.logoPath = "assets/cosmo-dark.webp";
+      }
+    },
+  },
+  mounted() {
+    this.changeImagePath();
+    this.logoMedia.addListener(this.changeImagePath);
+  },
+};
+</script>
 
 <!--the scss-->
 <style scoped lang="scss">
