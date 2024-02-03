@@ -1,6 +1,6 @@
 <template>
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+  <div id="mySidenav" class="sidenav" ref="sideNavigation">
+    <a href="javascript:void(0)" class="closebtn" @click="closeNav()"
       >&times;</a
     >
     <div class="navigation-menus">
@@ -609,9 +609,48 @@ export default {
         (category) => category.parent_category === categoryType
       );
     },
+    openNav() {
+      const navValue = document.querySelector(".nav-value");
+      const sideNav = document.getElementById("mySidenav");
+      if (sideNav.style.width === "0px" || sideNav.style.width === "") {
+        sideNav.style.width = "300px";
+        document.body.style.overflow = "hidden";
+        setTimeout(() => {
+          navValue.style.display = "flex";
+        }, 250);
+      } else {
+        this.closeNav();
+        document.body.style.overflow = "auto";
+        navValue.style.display = "none";
+      }
+    },
+    closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      const navValue = document.querySelector(".nav-value");
+      document.body.style.overflow = "auto";
+      navValue.style.display = "none";
+    },
   },
   mounted() {
-    this.getProductsCategories();
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuItems = document.querySelectorAll(".navigation-menus a");
+
+      menuItems.forEach(function (menuItem) {
+        menuItem.addEventListener("mouseenter", function () {
+          const targetId = menuItem.getAttribute("data-target");
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            document
+              .querySelectorAll(".nav-value-content")
+              .forEach(function (block) {
+                block.style.display = "none";
+              });
+            targetElement.style.display = "flex";
+          }
+        });
+      });
+    });
   },
 };
 </script>

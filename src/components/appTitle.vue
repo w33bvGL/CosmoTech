@@ -9,6 +9,7 @@
             :slides-per-view="1"
             :space-between="50"
             :pagination="true"
+            :loop="true"
             @swiper="onSwiper"
             :grabCursor="true"
             :modules="modules"

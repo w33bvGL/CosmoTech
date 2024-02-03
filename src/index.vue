@@ -63,8 +63,6 @@ export default {
     appSideNavigation,
     appFooter,
   },
-  mounted() {},
-  methods: {},
 };
 </script>
 

@@ -1,6 +1,6 @@
 <!-- the html -->
 <template>
-  <header>
+  <header ref="header">
     <div class="header-content-top">
       <div class="container">
         <div class="header-language-currency-call">
@@ -98,7 +98,7 @@
           </a>
         </div>
         <div class="header-container-middle-search-and-burger-menu">
-          <div class="burgermenu" onclick="openNav()">
+          <div class="burgermenu" @click="openNav">
             <svg
               width="25px"
               height="25px"
@@ -275,6 +275,27 @@ export default {
       } else {
         this.logoPath = "assets/cosmo-dark.webp";
       }
+    },
+    openNav() {
+      const navValue = document.querySelector(".nav-value");
+      const sideNav = document.getElementById("mySidenav");
+      if (sideNav.style.width === "0px" || sideNav.style.width === "") {
+        sideNav.style.width = "300px";
+        document.body.style.overflow = "hidden";
+        setTimeout(() => {
+          navValue.style.display = "flex";
+        }, 250);
+      } else {
+        this.closeNav();
+        document.body.style.overflow = "auto";
+        navValue.style.display = "none";
+      }
+    },
+    closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      const navValue = document.querySelector(".nav-value");
+      document.body.style.overflow = "auto";
+      navValue.style.display = "none";
     },
   },
   mounted() {
