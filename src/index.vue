@@ -69,7 +69,7 @@ export default {
 <style scoped lang="scss">
 .mobile-nav-child a:nth-child(1) {
   path {
-    stroke: var(--mobile-nav-buttons-active) !important;
+    stroke: red !important;
   }
 }
 </style>

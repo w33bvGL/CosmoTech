@@ -630,27 +630,45 @@ export default {
       document.body.style.overflow = "auto";
       navValue.style.display = "none";
     },
+    closeNavigationBar() {
+      let hideNavbar = window.matchMedia("(min-width: 769px)");
+      let logo = document.getElementById("mySidenav");
+      let navValue = document.getElementById("nav-value");
+
+      if (hideNavbar.matches) {
+        logo.style.display = "flex";
+        if (logo.style.display == "flex") {
+          navValue.style.display = "none";
+        }
+      } else {
+        logo.style.display = "none";
+        navValue.style.display = "none";
+      }
+    },
   },
   mounted() {
-    document.addEventListener("DOMContentLoaded", function () {
-      const menuItems = document.querySelectorAll(".navigation-menus a");
+    this.getProductsCategories();
+    const menuItems = document.querySelectorAll(".navigation-menus a");
+    menuItems.forEach(function (menuItem) {
+      menuItem.addEventListener("mouseenter", function () {
+        const targetId = menuItem.getAttribute("data-target");
+        const targetElement = document.getElementById(targetId);
 
-      menuItems.forEach(function (menuItem) {
-        menuItem.addEventListener("mouseenter", function () {
-          const targetId = menuItem.getAttribute("data-target");
-          const targetElement = document.getElementById(targetId);
-
-          if (targetElement) {
-            document
-              .querySelectorAll(".nav-value-content")
-              .forEach(function (block) {
-                block.style.display = "none";
-              });
-            targetElement.style.display = "flex";
-          }
-        });
+        if (targetElement) {
+          document
+            .querySelectorAll(".nav-value-content")
+            .forEach(function (block) {
+              block.style.display = "none";
+            });
+          targetElement.style.display = "flex";
+        }
       });
     });
+
+    // hideNavbar
+    let hideNavbar = window.matchMedia("(min-width: 769px)");
+    window.onload = this.closeNavigationBar;
+    hideNavbar.addListener(this.closeNavigationBar);
   },
 };
 </script>

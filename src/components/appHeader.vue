@@ -6,7 +6,7 @@
         <div class="header-language-currency-call">
           <ul>
             <li>
-              <a href="#" onclick="toggleMenu('menu1');" class="open-menu">
+              <a href="#" @click="toggleMenu('menu1')" class="open-menu">
                 <span class="header-lcc-config-span">
                   Լեզու։ Հայերեն
                   <svg
@@ -30,7 +30,7 @@
               </div>
             </li>
             <li>
-              <a href="#" onclick="toggleMenu('menu2');" class="open-menu">
+              <a href="#" @click="toggleMenu('menu2')" class="open-menu">
                 <span class="header-lcc-config-span">
                   Արժույթ։ AMD
                   <svg
@@ -264,11 +264,65 @@
 export default {
   data() {
     return {
+      openMenus: [],
       logoPath: "",
       logoMedia: window.matchMedia("(max-width: 1024px)"),
     };
   },
   methods: {
+    closeAllMenus() {
+      this.openMenus.forEach((openMenuId) => {
+        const openMenu = document.getElementById(openMenuId);
+        if (openMenu) {
+          openMenu.classList.remove("open");
+          setTimeout(() => {
+            openMenu.style.display = "none";
+          }, 50);
+        }
+      });
+      this.openMenus = [];
+    },
+    toggleMenu(menuId) {
+      const menu = document.getElementById(menuId);
+      console.log("vahe sis" + menu);
+
+      if (menu) {
+        const isOpen = menu.classList.contains("open");
+
+        this.closeAllMenus();
+
+        if (!isOpen) {
+          menu.style.display = "block";
+          this.openMenus.push(menuId);
+          setTimeout(() => {
+            menu.classList.add("open");
+          }, 50);
+        } else {
+          menu.classList.remove("open");
+          this.openMenus = this.openMenus.filter(
+            (openMenuId) => openMenuId !== menuId
+          );
+          setTimeout(() => {
+            menu.style.display = "none";
+          }, 50);
+        }
+      }
+    },
+    handleClick(event) {
+      if (
+        event.target.classList.contains("open-menu") ||
+        event.target.closest(".open-menu")
+      ) {
+        event.preventDefault();
+        const menuId = event.target.id || event.target.closest(".open-menu").id;
+        const menuElement = document.getElementById(menuId);
+        if (menuElement) {
+          this.toggleMenu(menuElement);
+        }
+      } else {
+        this.closeAllMenus();
+      }
+    },
     changeImagePath() {
       if (this.logoMedia.matches) {
         this.logoPath = "assets/cosmo-small.webp";
