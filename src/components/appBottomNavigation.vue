@@ -2,7 +2,7 @@
   <nav class="mobile-nav">
     <div class="nav-container">
       <div class="mobile-nav-child">
-        <a href="#" class="bloc-icon">
+        <router-link to="/" class="bloc-icon">
           <svg
             class="active-menu"
             aria-hidden="true"
@@ -18,7 +18,26 @@
               d="M3 8v10a1 1 0 0 0 1 1h4v-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5h4a1 1 0 0 0 1-1V8M1 10l9-9 9 9"
             />
           </svg>
-        </a>
+        </router-link>
+        <router-link to="/wishlist" class="bloc-icon">
+          <svg
+            class="w-[30px] h-[30px] text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 21 19"
+            width="25px"
+            height="25px"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M11 4C5.5-1.5-1.5 5.5 4 11l7 7 7-7c5.458-5.458-1.542-12.458-7-7Z"
+            />
+          </svg>
+        </router-link>
         <router-link to="/search" class="bloc-icon">
           <svg
             class="w-[30px] h-[30px] text-gray-800 dark:text-white"
@@ -36,7 +55,7 @@
             />
           </svg>
         </router-link>
-        <a href="#" class="bloc-icon">
+        <router-link to="/cart" class="bloc-icon">
           <svg
             class="w-[30px] h-[30px] text-gray-800 dark:text-white"
             aria-hidden="true"
@@ -52,8 +71,8 @@
               d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"
             />
           </svg>
-        </a>
-        <a href="#" class="bloc-icon">
+        </router-link>
+        <router-link to="/profile" class="bloc-icon">
           <svg
             class="w-[30px] h-[30px] text-gray-800 dark:text-white"
             aria-hidden="true"
@@ -69,13 +88,64 @@
               d="M7 8a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm-2 3h4a4 4 0 0 1 4 4v2H1v-2a4 4 0 0 1 4-4Z"
             />
           </svg>
-        </a>
+        </router-link>
       </div>
     </div>
   </nav>
 </template>
+<script>
+export default {
+  watch: {
+    $route() {
+      this.updateStyles();
+    },
+  },
 
-<script></script>
+  mounted() {
+    this.updateStyles();
+  },
+
+  methods: {
+    updateStyles() {
+      const pathIndex = this.getPathIndex(this.$route.name);
+      this.resetStyles();
+      this.applyStyles(pathIndex);
+    },
+
+    getPathIndex(routeName) {
+      switch (routeName) {
+        case "appIndex":
+          return 1;
+        case "appWishlist":
+          return 2;
+        case "appSearch":
+          return 3;
+        case "appCart":
+          return 4;
+        case "appProfile":
+          return 5;
+        default:
+          return 1;
+      }
+    },
+
+    resetStyles() {
+      this.$el.querySelectorAll(".mobile-nav-child a path").forEach((path) => {
+        path.style.stroke = "gray";
+      });
+    },
+
+    applyStyles(pathIndex) {
+      const selector = `.mobile-nav-child a:nth-child(${pathIndex}) path`;
+      const selectedPath = this.$el.querySelector(selector);
+
+      if (selectedPath) {
+        selectedPath.style.stroke = "#0063d1";
+      }
+    },
+  },
+};
+</script>
 
 <style scoped lang="scss">
 .mobile-nav {

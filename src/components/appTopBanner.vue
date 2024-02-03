@@ -158,7 +158,6 @@ export default {
           cursor: pointer;
           overflow: hidden;
           aspect-ratio: 2 / 1;
-          transition: 0.5s all;
 
           img {
             position: absolute;
@@ -185,7 +184,7 @@ export default {
             text-transform: uppercase;
             letter-spacing: 1px;
             border-radius: 4px;
-            transition: all 0.3s;
+            transition: background-color 0.3s, color 0.3s;
             cursor: pointer;
 
             &:hover {

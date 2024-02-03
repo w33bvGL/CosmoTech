@@ -83,7 +83,6 @@ export default {
   display: flex;
   box-sizing: border-box;
   position: relative;
-  transition: 0.5s all;
   aspect-ratio: 1 / 0.3;
   overflow: hidden;
 

@@ -66,10 +66,4 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-.mobile-nav-child a:nth-child(1) {
-  path {
-    stroke: red !important;
-  }
-}
-</style>
+<style scoped lang="scss"></style>

@@ -172,7 +172,7 @@
         <div class="header-container-middle-profile-cart-wishlist">
           <div class="container-v">
             <div class="profile container-box">
-              <a href="image.php" class="content-box-link">
+              <router-link to="/profile" class="content-box-link">
                 <div class="image">
                   <svg
                     class="w-[30px] h-[30px] text-gray-800 dark:text-white"
@@ -196,10 +196,10 @@
                   <p class="title-name">Մուտք</p>
                   <span class="vaule">Իմ հաշիվը</span>
                 </div>
-              </a>
+              </router-link>
             </div>
             <div class="wishlist container-box">
-              <a href="image.php" class="content-box-link">
+              <router-link to="/wishlist" class="content-box-link">
                 <div class="image">
                   <svg
                     class="w-[30px] h-[30px] text-gray-800 dark:text-white"
@@ -223,10 +223,10 @@
                   <p class="title-name">Ֆավորիտներ</p>
                   <span class="vaule">Ֆավ․ ցուցակ</span>
                 </div>
-              </a>
+              </router-link>
             </div>
             <div class="cart container-box">
-              <a href="image.php" class="content-box-link">
+              <router-link to="/cart" class="content-box-link">
                 <div class="image">
                   <svg
                     class="w-[30px] h-[30px] text-gray-800 dark:text-white"
@@ -250,7 +250,7 @@
                   <p class="title-name">Քո զամբյուղը</p>
                   <span class="vaule">1450.00 ֏</span>
                 </div>
-              </a>
+              </router-link>
             </div>
           </div>
         </div>
@@ -285,12 +285,9 @@ export default {
     toggleMenu(menuId) {
       const menu = document.getElementById(menuId);
       console.log("vahe sis" + menu);
-
       if (menu) {
         const isOpen = menu.classList.contains("open");
-
         this.closeAllMenus();
-
         if (!isOpen) {
           menu.style.display = "block";
           this.openMenus.push(menuId);
@@ -652,7 +649,7 @@ header {
 
 .menu {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 40px;
   width: 200px;
   background-color: var(--header-language-currency-menu);

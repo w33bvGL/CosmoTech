@@ -1,0 +1,1327 @@
+[
+  {
+    "id": "0",
+    "name": "Samsung",
+    "parent_category": "smartphone"
+  },
+  {
+    "id": "1",
+    "name": "Poco",
+    "parent_category": "smartphone"
+  },
+  {
+    "id": "2",
+    "name": "Huawei",
+    "parent_category": "smartphone"
+  },
+  {
+    "id": "3",
+    "name": "iPhone",
+    "parent_category": "smartphone"
+  },
+  {
+    "id": "4",
+    "name": "BlackBerry",
+    "parent_category": "smartphone"
+  },
+  {
+    "id": "5",
+    "name": "Xiaomi",
+    "parent_category": "smartphone"
+  },
+  {
+    "id": "6",
+    "name": "Nokia",
+    "parent_category": "smartphone"
+  },
+  {
+    "id": "7",
+    "name": "Sony",
+    "parent_category": "smartphone"
+  },
+  {
+    "id": "8",
+    "name": "LG",
+    "parent_category": "smartphone"
+  },
+  {
+    "id": "9",
+    "name": "HTC",
+    "parent_category": "smartphone"
+  },
+  {
+    "id": "10",
+    "name": "Motorola",
+    "parent_category": "smartphone"
+  },
+  {
+    "id": "11",
+    "name": "Google Pixel",
+    "parent_category": "smartphone"
+  },
+  {
+    "id": "12",
+    "name": "OnePlus",
+    "parent_category": "smartphone"
+  },
+  {
+    "id": "13",
+    "name": "Oppo",
+    "parent_category": "smartphone"
+  },
+  {
+    "id": "14",
+    "name": "Vivo",
+    "parent_category": "smartphone"
+  },
+  {
+    "id": "15",
+    "name": "Asus",
+    "parent_category": "smartphone"
+  },
+  {
+    "id": "16",
+    "name": "Lenovo",
+    "parent_category": "smartphone"
+  },
+  {
+    "id": "17",
+    "name": "ZTE",
+    "parent_category": "smartphone"
+  },
+  {
+    "id": "18",
+    "name": "Meizu",
+    "parent_category": "smartphone"
+  },
+  {
+    "id": "19",
+    "name": "Alcatel",
+    "parent_category": "smartphone"
+  },
+  {
+    "id": "20",
+    "name": "Samsung",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "21",
+    "name": "iPad",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "22",
+    "name": "Lenovo",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "23",
+    "name": "Huawei",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "24",
+    "name": "Sony",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "25",
+    "name": "Amazon",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "26",
+    "name": "Microsoft",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "27",
+    "name": "Asus",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "28",
+    "name": "Dell",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "29",
+    "name": "Acer",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "30",
+    "name": "Google Pixel Slate",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "31",
+    "name": "Xiaomi",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "32",
+    "name": "Samsung Galaxy Tab",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "33",
+    "name": "HP",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "34",
+    "name": "LG",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "35",
+    "name": "Archos",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "36",
+    "name": "Toshiba",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "37",
+    "name": "Panasonic",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "38",
+    "name": "Fujitsu",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "39",
+    "name": "RCA",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "40",
+    "name": "Teclast",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "41",
+    "name": "Alcatel",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "42",
+    "name": "BlackBerry PlayBook",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "43",
+    "name": "ZTE",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "44",
+    "name": "Nvidia Shield",
+    "parent_category": "tablet"
+  },
+  {
+    "id": "45",
+    "name": "Dell",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "46",
+    "name": "HP",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "47",
+    "name": "Lenovo",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "48",
+    "name": "Asus",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "49",
+    "name": "Acer",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "50",
+    "name": "Apple MacBook",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "51",
+    "name": "Microsoft Surface",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "52",
+    "name": "Samsung",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "53",
+    "name": "Sony",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "54",
+    "name": "Toshiba",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "55",
+    "name": "Huawei",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "56",
+    "name": "MSI",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "57",
+    "name": "LG",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "58",
+    "name": "Dell Alienware",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "59",
+    "name": "Razer",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "60",
+    "name": "Fujitsu",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "61",
+    "name": "Samsung Galaxy Book",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "62",
+    "name": "Google Pixelbook",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "63",
+    "name": "Lenovo ThinkPad",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "64",
+    "name": "Acer Predator",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "65",
+    "name": "MSI GT Series",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "66",
+    "name": "LG Gram",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "67",
+    "name": "Dell XPS",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "68",
+    "name": "Asus ROG",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "69",
+    "name": "HP Spectre",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "70",
+    "name": "Lenovo Legion",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "71",
+    "name": "Acer Aspire",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "72",
+    "name": "Microsoft Surface Laptop",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "73",
+    "name": "Asus ZenBook",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "74",
+    "name": "Dell Inspiron",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "75",
+    "name": "Lenovo Yoga",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "76",
+    "name": "Acer Swift",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "77",
+    "name": "Alienware M Series",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "78",
+    "name": "Samsung Notebook",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "79",
+    "name": "Toshiba Satellite",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "80",
+    "name": "Fujitsu Lifebook",
+    "parent_category": "laptop"
+  },
+  {
+    "id": "81",
+    "name": "Dell",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "82",
+    "name": "HP",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "83",
+    "name": "Lenovo",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "84",
+    "name": "Asus",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "85",
+    "name": "Acer",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "86",
+    "name": "Apple iMac",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "87",
+    "name": "Microsoft Surface Studio",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "88",
+    "name": "Samsung",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "89",
+    "name": "Sony",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "90",
+    "name": "Toshiba",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "91",
+    "name": "Huawei",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "92",
+    "name": "MSI",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "93",
+    "name": "LG",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "94",
+    "name": "Dell Alienware",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "95",
+    "name": "CyberPowerPC",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "96",
+    "name": "Acer Predator",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "97",
+    "name": "Asus ROG",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "98",
+    "name": "HP Pavilion",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "99",
+    "name": "Lenovo ThinkCentre",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "100",
+    "name": "Dell Inspiron",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "101",
+    "name": "Alienware Aurora",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "102",
+    "name": "MSI Trident",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "103",
+    "name": "Lenovo IdeaCentre",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "104",
+    "name": "Dell XPS",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "105",
+    "name": "Acer Aspire",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "106",
+    "name": "HP EliteDesk",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "107",
+    "name": "Asus VivoMini",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "108",
+    "name": "HP Slimline",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "109",
+    "name": "Lenovo Legion",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "110",
+    "name": "CybertronPC",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "111",
+    "name": "HP Envy",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "112",
+    "name": "Dell OptiPlex",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "113",
+    "name": "Acer Veriton",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "114",
+    "name": "Zotac",
+    "parent_category": "desktop"
+  },
+  {
+    "id": "115",
+    "name": "Dell",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "116",
+    "name": "HP",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "117",
+    "name": "LG",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "118",
+    "name": "Samsung",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "119",
+    "name": "Asus",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "120",
+    "name": "Acer",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "121",
+    "name": "BenQ",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "122",
+    "name": "ViewSonic",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "123",
+    "name": "Philips",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "124",
+    "name": "Dell Alienware",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "125",
+    "name": "AOC",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "126",
+    "name": "MSI",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "127",
+    "name": "NEC",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "128",
+    "name": "HP Pavilion",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "129",
+    "name": "Sony",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "130",
+    "name": "Philips Momentum",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "131",
+    "name": "Dell Ultrasharp",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "132",
+    "name": "Samsung Odyssey",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "133",
+    "name": "Asus ROG Swift",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "134",
+    "name": "LG UltraFine",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "135",
+    "name": "Acer Predator",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "136",
+    "name": "ViewSonic Elite",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "137",
+    "name": "BenQ Zowie",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "138",
+    "name": "Alienware AW",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "139",
+    "name": "Asus TUF Gaming",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "140",
+    "name": "AOC Agon",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "141",
+    "name": "HP Omen",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "142",
+    "name": "Dell S Series",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "143",
+    "name": "LG UltraGear",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "144",
+    "name": "Philips E-line",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "145",
+    "name": "Samsung Space",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "146",
+    "name": "Acer Nitro",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "147",
+    "name": "Asus ProArt",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "148",
+    "name": "ViewSonic VX",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "149",
+    "name": "Dell P Series",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "150",
+    "name": "HP EliteDisplay",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "151",
+    "name": "LG Ergo",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "152",
+    "name": "Philips Brilliance",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "153",
+    "name": "Samsung CJG",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "154",
+    "name": "Acer R Series",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "155",
+    "name": "Asus Designo",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "156",
+    "name": "BenQ GW",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "157",
+    "name": "ViewSonic XG",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "158",
+    "name": "Alienware Gaming",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "159",
+    "name": "AOC CQ",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "160",
+    "name": "MSI Optix",
+    "parent_category": "monitor"
+  },
+  {
+    "id": "161",
+    "name": "Epson",
+    "parent_category": "printer"
+  },
+  {
+    "id": "162",
+    "name": "HP",
+    "parent_category": "printer"
+  },
+  {
+    "id": "163",
+    "name": "Canon",
+    "parent_category": "printer"
+  },
+  {
+    "id": "164",
+    "name": "Brother",
+    "parent_category": "printer"
+  },
+  {
+    "id": "165",
+    "name": "Samsung",
+    "parent_category": "printer"
+  },
+  {
+    "id": "166",
+    "name": "Lexmark",
+    "parent_category": "printer"
+  },
+  {
+    "id": "167",
+    "name": "Dell",
+    "parent_category": "printer"
+  },
+  {
+    "id": "168",
+    "name": "Xerox",
+    "parent_category": "printer"
+  },
+  {
+    "id": "169",
+    "name": "Kyocera",
+    "parent_category": "printer"
+  },
+  {
+    "id": "170",
+    "name": "Ricoh",
+    "parent_category": "printer"
+  },
+  {
+    "id": "171",
+    "name": "Samsung",
+    "parent_category": "smart TV"
+  },
+  {
+    "id": "172",
+    "name": "LG",
+    "parent_category": "smart TV"
+  },
+  {
+    "id": "173",
+    "name": "Sony",
+    "parent_category": "smart TV"
+  },
+  {
+    "id": "174",
+    "name": "Panasonic",
+    "parent_category": "smart TV"
+  },
+  {
+    "id": "175",
+    "name": "TCL",
+    "parent_category": "smart TV"
+  },
+  {
+    "id": "176",
+    "name": "Vizio",
+    "parent_category": "smart TV"
+  },
+  {
+    "id": "177",
+    "name": "Hisense",
+    "parent_category": "smart TV"
+  },
+  {
+    "id": "178",
+    "name": "Sony",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "179",
+    "name": "Bose",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "180",
+    "name": "Samsung",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "181",
+    "name": "LG",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "182",
+    "name": "Sonos",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "183",
+    "name": "JBL",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "184",
+    "name": "Panasonic",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "185",
+    "name": "Philips",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "186",
+    "name": "Yamaha",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "187",
+    "name": "Bowers & Wilkins",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "188",
+    "name": "B&O",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "189",
+    "name": "Denon",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "190",
+    "name": "Sennheiser",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "191",
+    "name": "Harman Kardon",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "192",
+    "name": "Vizio",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "193",
+    "name": "Sharp",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "194",
+    "name": "Pioneer",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "195",
+    "name": "Polk Audio",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "196",
+    "name": "Marantz",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "197",
+    "name": "Bang & Olufsen",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "198",
+    "name": "Cambridge Audio",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "199",
+    "name": "Onkyo",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "200",
+    "name": "KEF",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "201",
+    "name": "Arcam",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "202",
+    "name": "Dynaudio",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "203",
+    "name": "Naim",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "204",
+    "name": "KEF LS50",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "205",
+    "name": "Focal",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "206",
+    "name": "Rega",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "207",
+    "name": "Klipsch",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "208",
+    "name": "GoldenEar Technology",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "209",
+    "name": "Tannoy",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "210",
+    "name": "MartinLogan",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "211",
+    "name": "Definitive Technology",
+    "parent_category": "audio-video"
+  },
+  {
+    "id": "212",
+    "name": "Canon",
+    "parent_category": "camera"
+  },
+  {
+    "id": "213",
+    "name": "Nikon",
+    "parent_category": "camera"
+  },
+  {
+    "id": "214",
+    "name": "Sony",
+    "parent_category": "camera"
+  },
+  {
+    "id": "215",
+    "name": "Fujifilm",
+    "parent_category": "camera"
+  },
+  {
+    "id": "216",
+    "name": "Epson",
+    "parent_category": "projector"
+  },
+  {
+    "id": "217",
+    "name": "BenQ",
+    "parent_category": "projector"
+  },
+  {
+    "id": "218",
+    "name": "Sony",
+    "parent_category": "projector"
+  },
+  {
+    "id": "219",
+    "name": "LG",
+    "parent_category": "projector"
+  },
+  {
+    "id": "220",
+    "name": "ViewSonic",
+    "parent_category": "projector"
+  },
+  {
+    "id": "221",
+    "name": "Acer",
+    "parent_category": "projector"
+  },
+  {
+    "id": "222",
+    "name": "Optoma",
+    "parent_category": "projector"
+  },
+  {
+    "id": "223",
+    "name": "Xiaomi",
+    "parent_category": "projector"
+  },
+  {
+    "id": "224",
+    "name": "EIKI",
+    "parent_category": "projector"
+  },
+  {
+    "id": "225",
+    "name": "Sony PlayStation",
+    "parent_category": "game console"
+  },
+  {
+    "id": "226",
+    "name": "Microsoft Xbox",
+    "parent_category": "game console"
+  },
+  {
+    "id": "227",
+    "name": "Nintendo Switch",
+    "parent_category": "game console"
+  },
+  {
+    "id": "228",
+    "name": "Sony PlayStation 5",
+    "parent_category": "game console"
+  },
+  {
+    "id": "229",
+    "name": "Microsoft Xbox Series X",
+    "parent_category": "game console"
+  },
+  {
+    "id": "230",
+    "name": "Nintendo Wii U",
+    "parent_category": "game console"
+  },
+  {
+    "id": "231",
+    "name": "Sony PlayStation 4",
+    "parent_category": "game console"
+  },
+  {
+    "id": "232",
+    "name": "Microsoft Xbox One",
+    "parent_category": "game console"
+  },
+  {
+    "id": "233",
+    "name": "Nintendo Wii",
+    "parent_category": "game console"
+  },
+  {
+    "id": "234",
+    "name": "Sony PlayStation 3",
+    "parent_category": "game console"
+  },
+  {
+    "id": "235",
+    "name": "DJI",
+    "parent_category": "drone"
+  },
+  {
+    "id": "236",
+    "name": "Parrot",
+    "parent_category": "drone"
+  },
+  {
+    "id": "237",
+    "name": "Autel Robotics",
+    "parent_category": "drone"
+  },
+  {
+    "id": "238",
+    "name": "Yuneec",
+    "parent_category": "drone"
+  },
+  {
+    "id": "239",
+    "name": "Holy Stone",
+    "parent_category": "drone"
+  },
+  {
+    "id": "240",
+    "name": "Syma",
+    "parent_category": "drone"
+  },
+  {
+    "id": "241",
+    "name": "Ryze Tech",
+    "parent_category": "drone"
+  },
+  {
+    "id": "242",
+    "name": "GoPro",
+    "parent_category": "drone"
+  },
+  {
+    "id": "243",
+    "name": "Potensic",
+    "parent_category": "drone"
+  },
+  {
+    "id": "244",
+    "name": "Hubsan",
+    "parent_category": "drone"
+  },
+  {
+    "id": "245",
+    "name": "Snaptain",
+    "parent_category": "drone"
+  },
+  {
+    "id": "246",
+    "name": "JJRC",
+    "parent_category": "drone"
+  },
+  {
+    "id": "247",
+    "name": "Drocon",
+    "parent_category": "drone"
+  },
+  {
+    "id": "248",
+    "name": "Altair Aerial",
+    "parent_category": "drone"
+  },
+  {
+    "id": "249",
+    "name": "Contixo",
+    "parent_category": "drone"
+  },
+  {
+    "id": "250",
+    "name": "Force1",
+    "parent_category": "drone"
+  },
+  {
+    "id": "251",
+    "name": "Eachine",
+    "parent_category": "drone"
+  },
+  {
+    "id": "252",
+    "name": "UDI RC",
+    "parent_category": "drone"
+  },
+  {
+    "id": "253",
+    "name": "Apple Watch",
+    "parent_category": "smartwatch"
+  },
+  {
+    "id": "254",
+    "name": "Samsung Galaxy Watch",
+    "parent_category": "smartwatch"
+  },
+  {
+    "id": "255",
+    "name": "Fitbit",
+    "parent_category": "smartwatch"
+  },
+  {
+    "id": "256",
+    "name": "Garmin",
+    "parent_category": "smartwatch"
+  },
+  {
+    "id": "257",
+    "name": "Amazfit",
+    "parent_category": "smartwatch"
+  },
+  {
+    "id": "258",
+    "name": "Fossil",
+    "parent_category": "smartwatch"
+  },
+  {
+    "id": "259",
+    "name": "Huawei Watch",
+    "parent_category": "smartwatch"
+  },
+  {
+    "id": "260",
+    "name": "TicWatch",
+    "parent_category": "smartwatch"
+  },
+  {
+    "id": "261",
+    "name": "Withings",
+    "parent_category": "smartwatch"
+  }, 
+  {
+    "id": "262",
+    "name": "Սմարթֆոնների չեխոլներ",
+    "parent_category": "accessories"
+  },
+  {
+    "id": "262",
+    "name": "Լարեր",
+    "parent_category": "accessories"
+  },
+  {
+    "id": "262",
+    "name": "Տեսախցիկի Օբյեկտիվներ",
+    "parent_category": "accessories"
+  }
+]

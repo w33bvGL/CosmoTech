@@ -7,6 +7,7 @@
           <swiper
             class="swiper-container"
             :slides-per-view="1"
+            :slides-per-group="1"
             :space-between="50"
             :pagination="true"
             :loop="true"
@@ -201,7 +202,6 @@ export default {
       justify-content: center;
       position: absolute;
       z-index: 2;
-      transition: 1.2s ease all;
       color: white !important;
       font-weight: bold;
 

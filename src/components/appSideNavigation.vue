@@ -625,24 +625,34 @@ export default {
       }
     },
     closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-      const navValue = document.querySelector(".nav-value");
-      document.body.style.overflow = "auto";
-      navValue.style.display = "none";
-    },
-    closeNavigationBar() {
-      let hideNavbar = window.matchMedia("(min-width: 769px)");
-      let logo = document.getElementById("mySidenav");
-      let navValue = document.getElementById("nav-value");
-
-      if (hideNavbar.matches) {
-        logo.style.display = "flex";
-        if (logo.style.display == "flex") {
+      const sideNav = document.getElementById("mySidenav");
+      if (sideNav) {
+        sideNav.style.width = "0";
+        const navValue = document.querySelector(".nav-value");
+        document.body.style.overflow = "auto";
+        if (navValue) {
           navValue.style.display = "none";
         }
+      }
+    },
+    closeNavigationBar() {
+      const hideNavbar = window.matchMedia("(min-width: 769px)");
+      const logo = document.getElementById("mySidenav");
+      const navValue = document.getElementById("nav-value");
+
+      if (hideNavbar.matches) {
+        if (logo && logo.style.display == "flex") {
+          if (navValue) {
+            navValue.style.display = "none";
+          }
+        }
       } else {
-        logo.style.display = "none";
-        navValue.style.display = "none";
+        if (logo) {
+          logo.style.display = "none";
+        }
+        if (navValue) {
+          navValue.style.display = "none";
+        }
       }
     },
   },

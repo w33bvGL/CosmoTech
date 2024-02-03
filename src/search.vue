@@ -1,20 +1,17 @@
 <template>
-  <p>sins</p>
-  <router-link to="/">sins the best programmer forever</router-link>
-  <section class="swiper-container">www</section>
+  <!-- bottom Navigation Bar Start -->
+  <bottomNavbar></bottomNavbar>
+  <!-- bottom Navigation Bar End -->
 </template>
 <script>
+import bottomNavbar from "./components/appBottomNavigation.vue";
+
 export default {
   name: "AppSearch",
+  components: {
+    bottomNavbar,
+  },
 };
 </script>
 
-<style scoped lang="scss">
-.page-link {
-  .mobile-nav-child a:nth-child(2) {
-    path {
-      stroke: var(--mobile-nav-buttons-active) !important;
-    }
-  }
-}
-</style>
+<style scoped lang="scss"></style>

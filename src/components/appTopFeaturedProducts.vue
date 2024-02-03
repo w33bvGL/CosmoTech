@@ -119,7 +119,6 @@ export default {
   box-sizing: border-box;
   cursor: pointer;
   aspect-ratio: 1 / 0.45;
-  transition: 0.5s all;
 
   &:hover .top-f-prod-card-image-block img {
     transform: scale(1.1);

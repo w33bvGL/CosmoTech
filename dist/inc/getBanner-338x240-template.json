@@ -1,0 +1,20 @@
+[
+  {
+    "id": "8",
+    "name": "Նոր ոճային Bluetooth բարձրախոս",
+    "description": "Անվճար առաքում 20կմ",
+    "image": "../assets/img/title/banner2.webp",
+    "visibility": "publish",
+    "category": "smartphone",
+    "subcategory": "97"
+  },
+  {
+    "id": "9",
+    "name": "Սահմանափակ Փոտոխցիկ",
+    "description": "Բարձր որակի ապրանքներ",
+    "image": "../assets/img/title/banner1.webp",
+    "visibility": "publish",
+    "category": "smartphone",
+    "subcategory": "97"
+  }
+]
