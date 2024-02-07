@@ -2,6 +2,8 @@
   <!-- bottom Navigation Bar Start -->
   <bottomNavbar></bottomNavbar>
   <!-- bottom Navigation Bar End -->
+  <!-- search mobile Start -->
+  <!-- search mobile End -->
 </template>
 <script>
 import bottomNavbar from "./components/appBottomNavigation.vue";
