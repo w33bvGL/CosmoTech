@@ -6,7 +6,11 @@
         <div class="header-language-currency-call">
           <ul>
             <li>
-              <a href="#" @click="toggleMenu('menu1')" class="open-menu">
+              <a
+                href="javascript:void(0);"
+                @click="toggleMenu('menu1')"
+                class="open-menu"
+              >
                 <span class="header-lcc-config-span">
                   Լեզու։ Հայերեն
                   <svg
@@ -30,7 +34,11 @@
               </div>
             </li>
             <li>
-              <a href="#" @click="toggleMenu('menu2')" class="open-menu">
+              <a
+                href="javascript:void(0);"
+                @click="toggleMenu('menu2')"
+                class="open-menu"
+              >
                 <span class="header-lcc-config-span">
                   Արժույթ։ AMD
                   <svg
@@ -65,22 +73,22 @@
         <div class="header-about-contact-Faqs">
           <ul>
             <li>
-              <a href="#">
+              <a href="javascript:void(0);">
                 <span class="header-lcc-config-span">Մեր մասին</span>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="javascript:void(0);">
                 <span class="header-lcc-config-span">Հետադարձ կապ</span>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="javascript:void(0);">
                 <span class="header-lcc-config-span">FAQs</span>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="javascript:void(0);">
                 <span class="header-lcc-config-span">Իմ հաշիվը</span>
               </a>
             </li>
@@ -91,11 +99,11 @@
     <div class="header-content-middle">
       <div class="container">
         <div class="header-container-middle-logo">
-          <a href="#">
+          <router-link to="/">
             <span>
               <img :src="logoPath" alt="CosmoLogo" id="logo" />
             </span>
-          </a>
+          </router-link>
         </div>
         <div class="header-container-middle-search-and-burger-menu">
           <div class="burgermenu" @click="openNav">
