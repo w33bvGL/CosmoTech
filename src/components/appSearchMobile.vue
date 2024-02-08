@@ -126,6 +126,17 @@
         <router-link to="/" class="mobile-search-content">
           <div class="mobile-search-cont-image">
             <img
+              src="../../public/assets/img/mobileSearch/internet.webp"
+              alt="cosmoNetwordDevice"
+            />
+          </div>
+          <div class="mobile-search-cont-info">
+            <p>Ցանցեր</p>
+          </div>
+        </router-link>
+        <router-link to="/" class="mobile-search-content">
+          <div class="mobile-search-cont-image">
+            <img
               src="../../public/assets/img/mobileSearch/drones.webp"
               alt="cosmoDrones"
             />
@@ -206,8 +217,9 @@
           background-color: white;
           display: flex;
           justify-content: center;
-          margin: 10px;
+          padding: 10px;
           overflow: hidden;
+          width: 100%;
 
           img {
             transition: transform 0.3s;

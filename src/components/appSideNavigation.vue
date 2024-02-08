@@ -172,6 +172,20 @@
         />
       </a>
 
+      <a href="#" class="menu-item" data-target="nav-value-network-devices">
+        <span>
+          <img
+            src="../../public/assets/img/sideNavigation/internet.webp"
+            alt="game-console"
+          />
+          Ցանցային սարքեր
+        </span>
+        <img
+          src="../../public/assets/img/sideNavigation/right.webp"
+          alt="arrow-right"
+        />
+      </a>
+
       <a href="#" class="menu-item" data-target="nav-value-drones">
         <span>
           <img
@@ -513,6 +527,36 @@
         </div>
       </div>
     </div>
+    <div class="nav-value-content" id="nav-value-network-devices">
+      <div class="nav-values-list">
+        <ul>
+          <li
+            v-for="category in filteredCategories('network device')"
+            :key="category.id"
+          >
+            <a :href="`#${category.name}`">{{ category.name }}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-category-image">
+        <div class="nav-category-i">
+          <img
+            src="../../public/assets/img/sideNavigation/cat-internet.webp"
+            alt="category-networkDevices"
+          />
+          <h3>Ցանցային սարքեր</h3>
+          <p class="about-category">
+            Բացահայտեք ցանցային սարքերի աշխարհը անջատիչների և երթուղիչների մեր
+            տեսականու միջոցով: Մեր հավաքածուն առաջարկում է տվյալների փոխանցման
+            բարձր որակ, հուսալի կատարում և լայն հնարավորություններ բոլոր տեսակի
+            ցանցային խնդիրների համար: Պահպանեք ձեր ցանցը սահուն և արդյունավետ
+            մեր սարքերի միջոցով, որոնք նախատեսված են ինչպես ցանցի փորձառու
+            ադմինիստրատորների, այնպես էլ սկսնակ օգտատերերի կարիքները բավարարելու
+            համար:
+          </p>
+        </div>
+      </div>
+    </div>
     <div class="nav-value-content" id="nav-value-drones">
       <div class="nav-values-list">
         <ul>
@@ -729,6 +773,7 @@ export default {
     margin-right: 5px;
   }
 }
+
 .nav-value {
   position: absolute;
   background-color: white;
@@ -738,7 +783,9 @@ export default {
   display: none;
   box-shadow: 5px 0px 5px -5px rgba(180, 180, 180, 0.5);
 }
+
 .navigation-menus {
+  padding-bottom: 200px;
   a {
     padding: 8px 8px 8px 10px;
     text-decoration: none;
@@ -786,10 +833,12 @@ export default {
     padding-bottom: 200px;
     padding-top: 50px;
     width: 300px;
+
     &::-webkit-scrollbar {
       width: 6px;
       background-color: #e9e9e981;
     }
+
     ul {
       width: 100%;
       padding: 10px 20px;
@@ -806,6 +855,7 @@ export default {
         border-radius: 5px;
         display: flex;
         cursor: pointer;
+
         a {
           width: 100%;
           transition: 0.1s all;
@@ -815,6 +865,7 @@ export default {
         &:hover {
           transform: translateX(10px);
           background-color: rgba(233, 233, 233, 0.5);
+
           a {
             color: #0063d1;
           }
@@ -828,6 +879,7 @@ export default {
     width: 100%;
     width: 250px;
     padding-top: 50px;
+
     .nav-category-i {
       text-align: left;
 
@@ -836,11 +888,13 @@ export default {
         text-align: center;
         text-wrap: nowrap;
       }
+
       .about-category {
         margin-top: 10px;
         font-size: 0.9em;
         color: #666666;
       }
+
       img {
         width: 100%;
         object-fit: cover;
