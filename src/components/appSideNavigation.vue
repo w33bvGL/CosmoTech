@@ -4,6 +4,20 @@
       >&times;</a
     >
     <div class="navigation-menus">
+      <router-link to="/search" class="menu-item">
+        <span>
+          <img
+            src="../../public/assets/img/sideNavigation/all.webp"
+            alt="all"
+          />
+          Տեսականի
+        </span>
+        <img
+          src="../../public/assets/img/sideNavigation/right.webp"
+          alt="arrow-right"
+        />
+      </router-link>
+
       <a href="#" class="menu-item" data-target="nav-value-smartphone">
         <span>
           <img
