@@ -1308,20 +1308,130 @@
     "id": "261",
     "name": "Withings",
     "parent_category": "smartwatch"
-  }, 
+  },
   {
     "id": "262",
     "name": "Սմարթֆոնների չեխոլներ",
     "parent_category": "accessories"
   },
   {
-    "id": "262",
+    "id": "263",
     "name": "Լարեր",
     "parent_category": "accessories"
   },
   {
-    "id": "262",
+    "id": "264",
     "name": "Տեսախցիկի Օբյեկտիվներ",
     "parent_category": "accessories"
+  },
+  {
+    "id": "265",
+    "name": "Switch",
+    "parent_category": "network device"
+  },
+  {
+    "id": "266",
+    "name": "Մոդեմ",
+    "parent_category": "network device"
+  },
+  {
+    "id": "267",
+    "name": "Wireless Router",
+    "parent_category": "network device"
+  },
+  {
+    "id": "268",
+    "name": "Media Converter",
+    "parent_category": "network device"
+  },
+  {
+    "id": "269",
+    "name": "Ցանցային ադապտեր",
+    "parent_category": "network device"
+  },
+  {
+    "id": "270",
+    "name": "IP Camera",
+    "parent_category": "network device"
+  },
+  {
+    "id": "271",
+    "name": "Print Server",
+    "parent_category": "network device"
+  },
+  {
+    "id": "272",
+    "name": "Patch Panel",
+    "parent_category": "network device"
+  },
+  {
+    "id": "273",
+    "name": "DHCP սերվեր",
+    "parent_category": "network device"
+  },
+  {
+    "id": "275",
+    "name": "DNS սերվեր",
+    "parent_category": "network device"
+  },
+  {
+    "id": "276",
+    "name": "Firewall",
+    "parent_category": "network device"
+  },
+  {
+    "id": "277",
+    "name": "VoIP Gateway",
+    "parent_category": "network device"
+  },
+  {
+    "id": "278",
+    "name": "Wireless LAN Controller",
+    "parent_category": "network device"
+  },
+  {
+    "id": "279",
+    "name": "Proxy server",
+    "parent_category": "network device"
+  },
+  {
+    "id": "280",
+    "name": "Load Balancer",
+    "parent_category": "network device"
+  },
+  {
+    "id": "281",
+    "name": "Multiservice Router",
+    "parent_category": "network device"
+  },
+  {
+    "id": "282",
+    "name":"Ցանցային հանգույց",
+    "parent_category": "network device"
+  },
+  {
+    "id": "283",
+    "name": "Wi-Fi մուտքի կետ",
+    "parent_category": "network device"
+  },
+  {
+    "id": "284",
+    "name": "Ցանցային անալիզատոր",
+    "parent_category": "network device"
+  },
+  {
+    "id": "285",
+    "name": "Ցանցային մակարդակի վիրուսների պաշտպանության սարք",
+    "parent_category": "network device"
+  },
+  {
+    "id": "286",
+    "name": "Ցանցային տպիչ",
+    "parent_category": "network device"
+  },
+  {
+    "id": "287",
+    "name": "Ցանցային մուտքի վերահսկման համակարգ",
+    "parent_category": "network device"
   }
 ]

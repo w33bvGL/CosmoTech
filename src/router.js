@@ -5,15 +5,26 @@ import appWishlist from "./wishlist.vue";
 import appCart from "./cart.vue";
 import appProfile from "./profile.vue";
 
+const routes = [
+  { path: "/", component: appIndex, name: "appIndex" },
+  { path: "/search", component: appSearch, name: "appSearch" },
+  { path: "/wishlist", component: appWishlist, name: "appWishlist" },
+  { path: "/cart", component: appCart, name: "appCart" },
+  { path: "/profile", component: appProfile, name: "appProfile" },
+];
+
 const router = createRouter({
   history: createWebHashHistory(),
-  routes: [
-    { path: "/", component: appIndex, name: "appIndex" },
-    { path: "/search", component: appSearch, name: "appSearch" },
-    { path: "/wishlist", component: appWishlist, name: "appWishlist" },
-    { path: "/cart", component: appCart, name: "appCart" },
-    { path: "/profile", component: appProfile, name: "appProfile" },
-  ],
+  routes,
+});
+
+const scrollPositions = {};
+router.beforeEach((to, from, next) => {
+  if (from.name) {
+    scrollPositions[from.fullPath] =
+      window.scroolY || document.documentElement.scrollTop;
+  }
+  next();
 });
 
 router.beforeEach((to, from, next) => {
@@ -21,6 +32,17 @@ router.beforeEach((to, from, next) => {
     document.body.style.overflow = "auto";
   }
   next();
+});
+
+router.afterEach((to) => {
+  const savedPosition = scrollPositions[to.fullPath];
+  if (savedPosition !== undefined) {
+    setTimeout(() => {
+      window.scrollTo(0, savedPosition);
+    }, 20);
+  } else {
+    window.scrollTo(0, 0);
+  }
 });
 
 export default router;
