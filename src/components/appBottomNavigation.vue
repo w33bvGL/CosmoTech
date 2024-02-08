@@ -156,6 +156,7 @@ export default {
   display: none;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
   z-index: 900;
+  border-top: 1px solid rgba(10, 10, 10, 0.05);
 
   .nav-container {
     width: 100%;
