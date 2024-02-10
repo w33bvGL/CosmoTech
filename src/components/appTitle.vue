@@ -10,7 +10,6 @@
             :slides-per-group="1"
             :space-between="50"
             :pagination="true"
-            :loop="true"
             @swiper="onSwiper"
             :grabCursor="true"
             :modules="modules"
@@ -209,7 +208,7 @@ export default {
         text-transform: uppercase;
         letter-spacing: 0px;
         line-height: 40px;
-        font-size: 2em;
+        font-size: 3em;
         color: black;
         font-family: "roboto" !important;
       }
@@ -218,7 +217,7 @@ export default {
         text-transform: uppercase;
         letter-spacing: 0px;
         line-height: 40px;
-        font-size: clamp(1em, 3em, 4em);
+        font-size: clamp(1em, 2em, 2.2em);
         color: black;
       }
 
@@ -410,6 +409,10 @@ export default {
     gap: 10px !important;
   }
 
+  .elementor {
+    padding-bottom: 0 !important;
+  }
+
   .elementor-el {
     aspect-ratio: 2.5 / 1 !important;
   }
@@ -497,6 +500,7 @@ export default {
 
   .elementor {
     padding: 5px 0 !important;
+    padding-bottom: 0 !important;
   }
 
   .elementor-title {
@@ -511,6 +515,12 @@ export default {
 
   .el-banner-cont {
     align-items: flex-start !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .elementor-inner {
+    padding: 0 5px !important;
   }
 }
 </style>

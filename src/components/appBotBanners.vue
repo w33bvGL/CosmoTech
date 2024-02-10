@@ -148,4 +148,18 @@ export default {
     display: flex !important;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .bottom-banners {
+    padding: 5px 0;
+
+    .bottom-banners-tit {
+      gap: 5px !important;
+    }
+  }
+
+  .bottom-banners-inner {
+    padding: 0 5px !important;
+  }
+}
 </style>

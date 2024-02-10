@@ -390,5 +390,8 @@ export default {
   .app-cart-product-image-block {
     display: none !important;
   }
+  .app-cart-product-info {
+    padding: 0 !important;
+  }
 }
 </style>

@@ -244,6 +244,10 @@ export default {
     gap: 5px !important;
   }
 
+  .top-categories-inner {
+    padding: 0 5px !important;
+  }
+
   .top-category-1,
   .top-category-2 {
     gap: 5px !important;

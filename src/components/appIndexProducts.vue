@@ -242,4 +242,22 @@ export default {
     padding: 0 !important;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .ind-products {
+    padding: 5px 0 !important;
+  }
+
+  .ind-products-inner {
+    padding: 0 5px !important;
+  }
+
+  .ind-prod-container-inner {
+    gap: 5px !important;
+  }
+
+  .ind-prod-card[data-v-64a35d76] {
+    width: calc(50% - 2.5px) !important;
+  }
+}
 </style>
