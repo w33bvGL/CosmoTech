@@ -1,12 +1,17 @@
-<?php 
-$serv_name = "172.17.64.1"; 
-$serv_username = "root";
-$serv_pass = "";
-$db_name = "onlineshop"; 
+<?php
 
-// connect to database
-$connect = mysqli_connect($serv_name, $serv_username, $serv_pass, $db_name);
+$dbHost = '172.17.64.1';
+$dbName = 'onlineshop';
+$dbUser = 'root';
+$dbPass = '';
 
-if (!$connect) {
-  die("Connection failed"); // connection error
+define('DB_DSN', "mysql:host=$dbHost;dbname=$dbName");
+define('DB_USERNAME', $dbUser);
+define('DB_PASSWORD', $dbPass);
+
+try {
+    $connect = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
+    $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
 }

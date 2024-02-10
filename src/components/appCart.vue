@@ -3,49 +3,52 @@
     <div class="app-cart-inner">
       <div class="app-cart-tit">
         <div
-          v-for="(product, index) in products"
+          v-for="(userCart, index) in userCart"
           :key="index"
           class="app-cart-product"
         >
           <div class="app-cart-product-image-block">
-            <img :src="product.image" alt="cart-prod-image" />
+            <img :src="userCart.img1" :alt="userCart.img1_alt" />
           </div>
           <div class="app-cart-product-info">
             <div class="app-cart-name-descr">
               <div class="app-cart-info-name">
-                <strong>{{ product.name }}</strong>
+                <strong>{{ userCart.name }}</strong>
               </div>
               <div class="app-cart-info-description">
-                <p>{{ product.description }}</p>
+                <p>{{ userCart.description }}</p>
               </div>
             </div>
             <div class="app-cart-price-old-new">
-              <div class="app-cart-new-price">{{ product.newPrice }}</div>
-              <div class="app-cart-old-price">{{ product.oldPrice }}</div>
+              <div class="app-cart-new-price">{{ userCart.new_price }} ֏</div>
+              <div class="app-cart-old-price">{{ userCart.old_price }} ֏</div>
             </div>
             <div class="app-cart-delivery">
-              <p>{{ product.delivery }}</p>
+              <p>Առաքումը: CosmoTechStore</p>
             </div>
             <div class="app-cart-recovery">
-              <p>{{ product.recovery }}</p>
+              <p>
+                650 դրամ ապրանքնը ետ վերադարձնելու համար հրաժարվելու դեպքում
+              </p>
             </div>
             <div class="product-count-delete-more">
               <div class="custom-counter">
-                <button @click="decrement(product.id)" class="counter-btn">
+                <button @click="decrement(userCart.id)" class="counter-btn">
                   -
                 </button>
                 <input
                   type="text"
-                  v-model="product.count"
+                  v-model="userCart.quantity"
                   class="counter-input"
-                  @input="validateInput(product.id)"
+                  @input="validateInput(userCart.id)"
                 />
-                <button @click="increment(product.id)" class="counter-btn">
+
+                <button @click="increment(userCart.id)" class="counter-btn">
                   +
                 </button>
               </div>
               <div class="custom-buy">
-                <button @click="addToCart(product.id)">Գնել</button>
+                <button @click="addToCart(userCart.id)">Գնել</button>
               </div>
             </div>
           </div>
@@ -90,59 +93,49 @@
   </section>
 </template>
 <script>
+import axios from "axios";
+
 export default {
   data() {
     return {
-      products: [
-        {
-          id: 1,
-          name: "SX-2357 Closed-Back Անլար ականջակալներ",
-          description:
-            "Նոր Օրիգինալ Անլար ականջակալներ SX-2357 Closed-black Սպիտակ",
-          newPrice: "5400 ֏",
-          oldPrice: "6700 ֏",
-          delivery: "Առաքումը: CosmoTechStore",
-          recovery:
-            "650 դրամ ապրանքնը ետ վերադարձնելու համար հրաժարվելու դեպքում",
-          image: "assets/img/topProducts/top-prod-1.webp",
-          count: 1,
-        },
-        {
-          id: 2,
-          name: "Название второго продукта",
-          description: "Описание второго продукта",
-          newPrice: "7449",
-          oldPrice: "3345",
-          delivery: "Доставка второго продукта",
-          recovery: "Информация о возврате второго продукта",
-          image: "assets/img/topProducts/top-prod-1.webp",
-          count: 2,
-        },
-      ],
+      userCart: [],
     };
   },
   methods: {
+    getUserCart() {
+      axios
+        .get("/inc/getUserCart-template.json")
+        .then((response) => {
+          this.userCart = response.data;
+        })
+        .catch((error) => {
+          console.error("error", error);
+        });
+    },
     increment(productId) {
-      const product = this.products.find((p) => p.id === productId);
+      const product = this.userCart.find((p) => p.id === productId);
       if (product) {
-        product.count++;
+        product.quantity++;
       }
     },
     decrement(productId) {
-      const product = this.products.find((p) => p.id === productId);
-      if (product && product.count > 1) {
-        product.count--;
+      const product = this.userCart.find((p) => p.id === productId);
+      if (product && product.quantity > 1) {
+        product.quantity--;
       }
     },
     validateInput(productId) {
-      const product = this.products.find((p) => p.id === productId);
+      const product = this.userCart.find((p) => p.id === productId);
       if (product) {
-        product.count = product.count.replace(/\D/g, "");
+        product.quantity = product.quantity.replace(/\D/g, "");
       }
     },
     addToCart(productId) {
       console.log(`ID: ${productId}`);
     },
+  },
+  mounted() {
+    this.getUserCart();
   },
 };
 </script>
@@ -204,7 +197,8 @@ export default {
   .app-cart-info-description {
     width: 100%;
     display: -webkit-box;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 2;
+    font-size: 0.9em;
     -webkit-box-orient: vertical;
     overflow: hidden;
     margin-top: 10px;
@@ -329,7 +323,7 @@ export default {
   }
 
   .app-cart {
-    padding-bottom: 80px !important;
+    padding-bottom: 85px !important;
   }
 
   .product-count-delete-more {
