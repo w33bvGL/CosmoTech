@@ -39,7 +39,7 @@ router.afterEach((to) => {
   if (savedPosition !== undefined) {
     setTimeout(() => {
       window.scrollTo(0, savedPosition);
-    }, 20);
+    }, 50);
   } else {
     window.scrollTo(0, 0);
   }

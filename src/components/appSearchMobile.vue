@@ -283,7 +283,7 @@
   }
 
   .mobile-search {
-    padding-bottom: 90px !important;
+    padding-bottom: 85px !important;
   }
 
   .mobile-search-content {
@@ -306,7 +306,11 @@
     }
   }
 }
-
+@media screen and (max-width: 425px) {
+  .mobile-search {
+    padding-top: 5px !important;
+  }
+}
 @media screen and (max-width: 420px) {
   .mobile-search-content {
     width: calc(50% - 5px) !important;

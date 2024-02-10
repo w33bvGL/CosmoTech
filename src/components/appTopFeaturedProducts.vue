@@ -150,7 +150,6 @@ export default {
 
     .top-f-prod-card-inf-prod-name {
       width: 100%;
-
       font-weight: bold;
       transition: 0.2s;
       display: -webkit-box;
