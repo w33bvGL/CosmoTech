@@ -307,13 +307,31 @@
   }
 }
 @media screen and (max-width: 425px) {
+  .mobile-search-content {
+    width: calc(33.3333333% - 3.4px) !important;
+  }
   .mobile-search {
     padding-top: 5px !important;
+
+    .mobile-search-inner {
+      padding: 0 5px !important;
+    }
+
+    .mobile-search-tit {
+      gap: 5px !important;
+    }
+  }
+
+  .mobile-search-cont-info {
+    p {
+      padding-left: 5px !important;
+      padding-right: 5px !important;
+    }
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 400px) {
   .mobile-search-content {
-    width: calc(50% - 5px) !important;
+    width: calc(50% - 2.5px) !important;
   }
 
   .mobile-search-cont-image {
