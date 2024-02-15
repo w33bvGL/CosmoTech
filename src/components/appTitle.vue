@@ -217,7 +217,7 @@ export default {
         text-transform: uppercase;
         letter-spacing: 0px;
         line-height: 40px;
-        font-size: clamp(1em, 2em, 2.2em);
+        font-size: clamp(1em, 3em, 2.5em);
         color: black;
       }
 
