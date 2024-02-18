@@ -4,6 +4,7 @@ import appSearch from "./search.vue";
 import appWishlist from "./wishlist.vue";
 import appCart from "./cart.vue";
 import appProfile from "./profile.vue";
+import appAboutUs from "./aboutUs.vue";
 
 const routes = [
   { path: "/", component: appIndex, name: "appIndex" },
@@ -11,6 +12,7 @@ const routes = [
   { path: "/wishlist", component: appWishlist, name: "appWishlist" },
   { path: "/cart", component: appCart, name: "appCart" },
   { path: "/profile", component: appProfile, name: "appProfile" },
+  { path: "/aboutUs", component: appAboutUs, name: "appAboutUs" },
 ];
 
 const router = createRouter({

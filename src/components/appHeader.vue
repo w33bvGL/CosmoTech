@@ -73,9 +73,9 @@
         <div class="header-about-contact-Faqs">
           <ul>
             <li>
-              <a href="javascript:void(0);">
+              <router-link to="/aboutUs">
                 <span class="header-lcc-config-span">Մեր մասին</span>
-              </a>
+              </router-link>
             </li>
             <li>
               <a href="javascript:void(0);">
